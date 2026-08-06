@@ -1,6 +1,9 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import TrustBadges from '../components/TrustBadges';
+import ServiceWarrantySection from '../components/ServiceWarrantySection';
+import MosquitoSpeciesRadar from '../components/MosquitoSpeciesRadar';
+import MosquitoRiskCalculator from '../components/MosquitoRiskCalculator';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ServicesSection from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
@@ -11,39 +14,50 @@ import StatsCounter from '../components/StatsCounter';
 import AreasWeServe from '../components/AreasWeServe';
 import { useNavigate } from 'react-router-dom';
 
-export default function HomePage({ onOpenBooking }) {
+export default function HomePage() {
   const navigate = useNavigate();
 
   return (
     <div className="space-y-0">
-      {/* Hero Section */}
+      {/* 1. Full Screen Video Hero Section */}
       <HeroSection onOpenBooking={() => navigate('/book')} />
 
-      {/* Trust Badges Marquee */}
+      {/* 2. Emergency 24x7 Rapid Dispatch Banner */}
+
+      {/* 3. Trust Badges (Government Licensed, Safe Chemicals, 90-Day Warranty) */}
       <TrustBadges />
 
-      {/* Why Choose Us */}
+      {/* 4. Mosquito Species Threat Radar */}
+      <MosquitoSpeciesRadar />
+
+      {/* 5. Interactive Mosquito Risk Estimator Calculator */}
+      <MosquitoRiskCalculator />
+
+      {/* 6. Why Choose Us */}
       <WhyChooseUs onOpenBooking={() => navigate('/book')} />
 
-      {/* Featured Services */}
+      {/* 7. Dedicated Service Warranty & Protection Guarantee Section */}
+      <ServiceWarrantySection onOpenBooking={() => navigate('/book')} />
+
+      {/* 8. 13 Services Catalog */}
       <ServicesSection onOpenBooking={() => navigate('/book')} />
 
-      {/* 5-Step Process */}
+      {/* 9. 5-Step Vector Process */}
       <ProcessSection onOpenBooking={() => navigate('/book')} />
 
-      {/* Health & Family Safety */}
+      {/* 10. Health & Protection Benefits */}
       <HealthBenefits onOpenBooking={() => navigate('/book')} />
 
-      {/* Before / After Comparison */}
+      {/* 11. Interactive Before / After Slider */}
       <BeforeAfterSlider />
 
-      {/* Stats Counter */}
+      {/* 12. Stats Counter Bar */}
       <StatsCounter />
 
-      {/* Testimonials */}
+      {/* 13. Customer Reviews */}
       <Testimonials />
 
-      {/* Areas We Serve */}
+      {/* 14. Areas We Serve */}
       <AreasWeServe onOpenBooking={() => navigate('/book')} />
     </div>
   );

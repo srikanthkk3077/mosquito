@@ -1,7 +1,55 @@
+export const MOSQUITO_SPECIES_DATA = [
+  {
+    id: 'aedes',
+    name: 'Aedes Aegypti (Dengue Mosquito)',
+    tag: 'Highest Hazard',
+    color: 'bg-rose-500',
+    activity: 'Daytime Biter (7 AM - 5 PM)',
+    threat: 'Transmits Dengue Fever, Chikungunya & Zika Virus',
+    habitat: 'Clean stagnant water in plant pots, saucers, balcony pebbles, AC trays',
+    eradication: 'Targeted botanical cold misting on indoor resting spots + balcony barrier'
+  },
+  {
+    id: 'anopheles',
+    name: 'Anopheles (Malaria Mosquito)',
+    tag: 'Severe Threat',
+    color: 'bg-amber-500',
+    activity: 'Dusk till Dawn Biter (6 PM - 6 AM)',
+    threat: 'Transmits Malaria Parasites & High Fever',
+    habitat: 'Outdoor garden bushes, shaded lawns, overhead tanks & gutters',
+    eradication: 'Outdoor foliage residual misting + perimeter thermal fogging'
+  },
+  {
+    id: 'culex',
+    name: 'Culex (Nuisance Mosquito)',
+    tag: 'High Nuisance',
+    color: 'bg-emerald-600',
+    activity: 'Nighttime Buzzing Biter',
+    threat: 'Causes severe skin welts, allergic itching & Filariasis risk',
+    habitat: 'Drainage sumps, stagnant basement water & elevator pits',
+    eradication: 'BTI anti-larval bio-treatment in sumps + ULV wall fogging'
+  }
+];
+
+export const CALCULATOR_OPTIONS = {
+  propertyTypes: [
+    { label: '2BHK Apartment (1000 - 1300 sq ft)', score: 2, price: '₹1,499' },
+    { label: '3BHK / 4BHK Apartment (1400 - 2500 sq ft)', score: 3, price: '₹1,999' },
+    { label: 'Gated Villa & Private Garden (3000+ sq ft)', score: 5, price: '₹2,999' },
+    { label: 'Commercial Office / IT Park', score: 4, price: 'Custom Quote' },
+    { label: 'Restaurant / Outdoor Dining Space', score: 4, price: '₹2,499' }
+  ],
+  severities: [
+    { label: 'Severe Mosquito Swarms & Bites Daily', threat: 'CRITICAL (Dengue Hazard Level 92%)' },
+    { label: 'Moderate Mosquitoes in Balcony & Garden', threat: 'HIGH (Dengue Risk 74%)' },
+    { label: 'Occasional Buzzing & Stagnant Water Nearby', threat: 'MODERATE (Risk Level 45%)' }
+  ]
+};
+
 export const SERVICES_DATA = [
   {
     id: 'residential',
-    title: 'Residential Mosquito Control',
+    title: 'Residential Mosquito Micro-Misting',
     category: 'residential',
     tag: 'Most Popular',
     image: '/assets/hero.png',

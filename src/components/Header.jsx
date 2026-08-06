@@ -50,7 +50,7 @@ export default function Header({ onOpenBooking }) {
             </div>
             <div>
               <span className="font-heading font-extrabold text-lg tracking-tight bg-gradient-to-r from-emerald-800 via-emerald-700 to-slate-900 bg-clip-text text-transparent">
-                MosquiShield<span className="text-amber-500">™</span>
+                mosquitofightre<span className="text-amber-500">™</span>
               </span>
               <span className="block text-[9px] uppercase font-bold tracking-widest text-emerald-600 -mt-1">
                 Hyderabad Vector Experts
