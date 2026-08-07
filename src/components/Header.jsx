@@ -28,14 +28,12 @@ export default function Header({ onOpenBooking }) {
     { name: 'Contact', path: '/contact' },
   ];
 
-  // Secondary Links in the "More" Mega Dropdown
   const secondaryNav = [
-    // { name: '5-Step Process', path: '/process', desc: 'How our vector misting works', icon: Layers },
     { name: 'Gallery Showcase', path: '/gallery', desc: 'Photos of field operations', icon: Image },
     { name: 'Customer Reviews', path: '/reviews', desc: '2,480+ Google 5-Star ratings', icon: Star },
     { name: 'Areas We Serve', path: '/areas', desc: 'Gachibowli, Hitech City & hubs', icon: MapPin },
     { name: 'FAQ & Help', path: '/faq', desc: '15 Answers on safety & pets', icon: HelpCircle },
-    // { name: 'Dengue Blog', path: '/blog', desc: 'Prevention guides & tips', icon: BookOpen },
+    { name: 'Dengue Blog', path: '/blog', desc: 'Prevention guides & tips', icon: BookOpen },
   ];
 
   return (

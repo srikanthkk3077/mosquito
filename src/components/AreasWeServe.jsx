@@ -29,15 +29,17 @@ export default function AreasWeServe({ onOpenBooking }) {
           </p>
 
           {/* Quick Search Input */}
-          <div className="max-w-md mx-auto pt-4 relative">
-            <Search className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              placeholder="Search your locality or pin code (e.g. Gachibowli, 500081)..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-3.5 rounded-full border border-slate-300 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-sm outline-none transition-all shadow-sm"
-            />
+          <div className="max-w-md mx-auto mt-4">
+            <div className="relative">
+              <Search className="w-4 h-4 sm:w-5 sm:h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none z-10" />
+              <input
+                type="text"
+                placeholder="Search your locality or pin code (e.g. Gachibowli, 500081)..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-3.5 rounded-full border border-slate-300 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-xs sm:text-sm outline-none transition-all shadow-sm"
+              />
+            </div>
           </div>
         </div>
 
