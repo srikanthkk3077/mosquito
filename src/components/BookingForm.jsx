@@ -237,14 +237,14 @@ export default function BookingForm({ isModal = false, onClose }) {
                   <label className="block text-xs font-bold uppercase tracking-wider text-slate-300">
                     Preferred Date *
                   </label>
-                  <div className="relative">
-                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                  <div className="relative w-full max-w-full overflow-hidden">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none z-10" />
                     <input
                       type="date"
                       required
                       value={formData.date}
                       onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                      className="w-full pl-10 pr-2 sm:pl-12 sm:pr-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 focus:border-emerald-500 text-white text-xs sm:text-sm outline-none transition-all"
+                      className="w-full max-w-full pl-10 pr-3 sm:pl-12 sm:pr-4 py-3 rounded-xl bg-slate-800/90 border border-slate-700 focus:border-emerald-500 text-white text-xs sm:text-sm outline-none transition-all box-border"
                     />
                   </div>
                 </div>
