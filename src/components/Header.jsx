@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Shield, Phone, Calendar, Menu, X, ChevronDown, ChevronRight, Layers, Star, MapPin, HelpCircle, BookOpen, Image } from 'lucide-react';
+import { Phone, Calendar, Menu, X, ChevronDown, ChevronRight, Layers, Star, MapPin, HelpCircle, BookOpen, Image } from 'lucide-react';
 
 export default function Header({ onOpenBooking }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,14 +43,18 @@ export default function Header({ onOpenBooking }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-700 to-emerald-500 flex items-center justify-center text-white shadow-md shadow-emerald-700/20 group-hover:scale-105 transition-transform">
-              <Shield className="w-5 h-5 stroke-[2.5]" />
+          {/* Brand Logo with Clean Crisp Icon Mark */}
+          <Link to="/" className="flex items-center gap-3 shrink-0 group">
+            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-emerald-700/20 border border-emerald-600/30 group-hover:scale-105 transition-transform bg-white flex items-center justify-center p-0.5">
+              <img
+                src="/assets/logo.png"
+                alt="MosquiShield Icon"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <span className="font-heading font-extrabold text-lg tracking-tight bg-gradient-to-r from-emerald-800 via-emerald-700 to-slate-900 bg-clip-text text-transparent">
-                mosquitofightre<span className="text-amber-500">™</span>
+                MosquiShield<span className="text-amber-500">™</span>
               </span>
               <span className="block text-[9px] uppercase font-bold tracking-widest text-emerald-600 -mt-1">
                 Hyderabad Vector Experts
@@ -58,7 +62,7 @@ export default function Header({ onOpenBooking }) {
             </div>
           </Link>
 
-          {/* Desktop Navigation Links (Clean 5 Links + More Dropdown) */}
+          {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-1.5 lg:gap-2">
             {primaryNav.map((link) => (
               <NavLink
@@ -170,7 +174,7 @@ export default function Header({ onOpenBooking }) {
         </div>
       </div>
 
-      {/* Mobile / Tablet Drawer Menu */}
+      {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-x-0 top-[65px] bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-2xl p-6 transition-all animate-in slide-in-from-top duration-300">
           <div className="text-xs uppercase tracking-wider font-extrabold text-slate-400 mb-2 px-2">

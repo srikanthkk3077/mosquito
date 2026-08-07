@@ -1,7 +1,52 @@
-import React from 'react';
-import { Calendar, Phone, Star, Users, Clock, Sparkles, CheckCircle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Calendar, Phone, Star, Users, Clock, Sparkles, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function HeroSection({ onOpenBooking }) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroSlides = [
+    {
+      image: '/assets/hero.png',
+      title: 'German ULV Cold Fogging',
+      subtitle: 'Precision Micro-Mist Barrier Application',
+      badge: 'Villa Protection'
+    },
+    {
+      image: '/assets/garden.png',
+      title: 'Landscape & Foliage Misting',
+      subtitle: 'Eco-Friendly Plant & Bee Safe Formula',
+      badge: 'Outdoor Shield'
+    },
+    {
+      image: '/assets/commercial.png',
+      title: 'Corporate IT Hub Sanitization',
+      subtitle: 'Discreet After-Hours Office Vector Control',
+      badge: 'Commercial'
+    },
+    {
+      image: '/assets/family.png',
+      title: 'Baby & Pet Safe Indoor Misting',
+      subtitle: '100% Odorless Non-Staining Bio-Actives',
+      badge: '100% Odorless'
+    }
+  ];
+
+  // Auto slide interval
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [heroSlides.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+  };
+
   return (
     <section id="home" className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-gradient-to-b from-emerald-50/70 via-slate-50 to-slate-50">
       {/* Background Decorative Blur Blobs */}
@@ -99,31 +144,76 @@ export default function HeroSection({ onOpenBooking }) {
 
           </div>
 
-          {/* Right Side Visual Showcase */}
+          {/* Right Side Interactive Image Carousel Slider */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Main Image Frame */}
+              {/* Main Image Carousel Frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
-                <img
-                  src="/assets/hero.png"
-                  alt="Professional Mosquito Treatment Hyderabad"
-                  className="w-full h-[400px] sm:h-[440px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
                 
-                {/* Bottom Overlay Label */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-dark text-white">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-bold text-sm sm:text-base">German ULV Cold Fogging</h4>
-                      <p className="text-[11px] text-slate-300">Precision Micro-Mist Barrier Application</p>
+                {/* Images Slides Container */}
+                <div className="relative w-full h-[400px] sm:h-[440px] overflow-hidden">
+                  {heroSlides.map((slide, idx) => (
+                    <div
+                      key={idx}
+                      className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                        idx === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105 pointer-events-none'
+                      }`}
+                    >
+                      <img
+                        src={slide.image}
+                        alt={slide.title}
+                        className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                      
+                      {/* Dynamic Bottom Overlay Label */}
+                      <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-dark text-white shadow-xl border border-slate-700/50">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h4 className="font-bold text-sm sm:text-base text-white">{slide.title}</h4>
+                            <p className="text-[11px] text-slate-300">{slide.subtitle}</p>
+                          </div>
+                          <span className="px-2.5 py-1 bg-emerald-500/30 border border-emerald-400/50 text-emerald-300 rounded-full text-[10px] font-bold">
+                            {slide.badge}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <span className="px-2.5 py-1 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 rounded-full text-[10px] font-semibold">
-                      Live Tech
-                    </span>
-                  </div>
+                  ))}
                 </div>
+
+                {/* Slider Manual Navigation Arrows */}
+                <button
+                  onClick={prevSlide}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-slate-900/70 hover:bg-emerald-600 text-white backdrop-blur-md border border-slate-700 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 cursor-pointer"
+                  title="Previous slide"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+
+                <button
+                  onClick={nextSlide}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-slate-900/70 hover:bg-emerald-600 text-white backdrop-blur-md border border-slate-700 flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 cursor-pointer"
+                  title="Next slide"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+
+                {/* Slide Indicator Dots */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 p-1.5 rounded-full bg-slate-950/60 backdrop-blur-md border border-slate-800">
+                  {heroSlides.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentSlide(idx)}
+                      className={`h-2 rounded-full transition-all cursor-pointer ${
+                        idx === currentSlide ? 'w-6 bg-emerald-400' : 'w-2 bg-slate-500/60 hover:bg-slate-400'
+                      }`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+
               </div>
 
               {/* Stat Card 1 (Bottom Left Overlay) */}

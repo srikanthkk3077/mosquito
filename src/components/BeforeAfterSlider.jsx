@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { SlidersHorizontal, Sparkles, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { SlidersHorizontal, ShieldCheck, AlertTriangle } from 'lucide-react';
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -38,7 +38,7 @@ export default function BeforeAfterSlider() {
             See the MosquiShield™ Difference
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal">
-            Drag the interactive slider below to compare an untreated mosquito-infested lawn vs. a MosquiShield eco-protected paradise.
+            Drag the interactive slider below to compare an untreated mosquito-infested area vs. a MosquiShield eco-protected paradise.
           </p>
         </div>
 
@@ -51,37 +51,37 @@ export default function BeforeAfterSlider() {
             onMouseLeave={() => setIsDragging(false)}
             onMouseMove={handleMouseMove}
             onTouchMove={handleTouchMove}
-            className="relative h-[400px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize before-after-container"
+            className="relative h-[400px] sm:h-[520px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize before-after-container"
           >
-            {/* AFTER Image (Background - Clean Protected Zone) */}
+            {/* AFTER Image (Background - Clean Sunlit Protected Zone) */}
             <img
-              src="/assets/garden.png"
+              src="/assets/after.png"
               alt="After MosquiShield Mosquito Treatment"
               className="absolute inset-0 w-full h-full object-cover"
             />
             
             {/* AFTER Label */}
-            <div className="absolute top-6 right-6 px-4 py-2 rounded-full glass-dark text-white text-xs font-bold flex items-center gap-2 z-20 border border-emerald-400/40">
+            <div className="absolute top-6 right-6 px-4 py-2 rounded-full glass-dark text-white text-xs font-bold flex items-center gap-2 z-20 border border-emerald-400/40 shadow-xl">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               <span>AFTER: 100% Bite-Free Protected Zone</span>
             </div>
 
-            {/* BEFORE Image (Clipped Overlay - Infested Lawn) */}
+            {/* BEFORE Image (Clipped Overlay - Infested Gloomy Garden) */}
             <div
               className="absolute inset-0 overflow-hidden"
               style={{ width: `${sliderPosition}%` }}
             >
               <img
-                src="/assets/hero.png"
+                src="/assets/before.png"
                 alt="Before Mosquito Treatment"
-                className="absolute inset-0 w-full h-full object-cover filter contrast-125 brightness-90 saturate-50"
+                className="absolute inset-0 w-full h-full object-cover"
                 style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%' }}
               />
               <div className="absolute inset-0 bg-red-950/20 mix-blend-multiply" />
             </div>
 
             {/* BEFORE Label */}
-            <div className="absolute top-6 left-6 px-4 py-2 rounded-full bg-red-900/80 backdrop-blur-md text-white text-xs font-bold flex items-center gap-2 z-20 border border-red-400/40">
+            <div className="absolute top-6 left-6 px-4 py-2 rounded-full bg-red-900/90 backdrop-blur-md text-white text-xs font-bold flex items-center gap-2 z-20 border border-red-400/40 shadow-xl">
               <AlertTriangle className="w-4 h-4 text-amber-400" />
               <span>BEFORE: High Dengue Risk & Swarms</span>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Star, Send, CheckCircle2 } from 'lucide-react';
+import { Star, Send, CheckCircle2 } from 'lucide-react';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -23,8 +23,12 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-6">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shadow-lg shadow-emerald-600/30">
-                <Shield className="w-7 h-7 stroke-[2.5]" />
+              <div className="w-12 h-12 rounded-2xl bg-white p-1 shadow-lg shadow-emerald-600/30 overflow-hidden flex items-center justify-center border border-emerald-500/40">
+                <img
+                  src="/assets/logo.png"
+                  alt="MosquiShield Icon"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <span className="font-heading font-extrabold text-2xl tracking-tight text-white">
