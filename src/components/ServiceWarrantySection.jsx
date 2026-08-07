@@ -11,13 +11,13 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45rem] h-[25rem] bg-emerald-600/10 blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Certificate Card Frame */}
           <div className="lg:col-span-6 relative">
             <div className="glass-dark p-8 sm:p-10 rounded-3xl border-2 border-emerald-500/50 shadow-2xl space-y-6 relative overflow-hidden">
-              
+
               {/* Gold Seal Stamp */}
               <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 flex flex-col items-center justify-center p-2 shadow-2xl rotate-12 border-4 border-slate-900">
                 <Award className="w-8 h-8 stroke-[2.5]" />
@@ -91,7 +91,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              
+
               <div className="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-2">
                 <div className="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center font-extrabold text-lg">
                   ⚡ 24h
@@ -116,11 +116,11 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
 
             <div className="pt-4 flex items-center gap-4">
               <a
-                href="tel:+919876543210"
+                href="tel:+919949187262"
                 className="py-3.5 px-6 rounded-full bg-slate-800 border border-slate-700 hover:border-emerald-500 text-white font-bold text-xs flex items-center gap-2 transition-all"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
-                <span>Warranty Claims Helpline: +91 98765 43210</span>
+                <span>Warranty Claims Helpline: +91 99491 87262</span>
               </a>
             </div>
 

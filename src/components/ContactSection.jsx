@@ -6,17 +6,17 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: '24/7 Call Center',
-      value: '+91 98765 43210',
+      value: '+91 99491 87262',
       sub: 'Emergency & Same Day Dispatch',
-      action: 'tel:+919876543210',
+      action: 'tel:+919949187262',
       actionText: 'Call Now'
     },
     {
       icon: MessageSquare,
       title: 'WhatsApp Instant Support',
-      value: '+91 98765 43210',
+      value: '+91 99491 87262',
       sub: 'Instant Quotes & Video Audits',
-      action: 'https://wa.me/919876543210',
+      action: 'https://wa.me/919949187262',
       actionText: 'Chat on WhatsApp'
     },
     {
@@ -40,7 +40,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">

@@ -42,7 +42,7 @@ export default function Header({ onOpenBooking }) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 text-slate-900 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
+
           {/* Brand Logo with Clean Crisp Icon Mark */}
           <Link to="/" className="flex items-center gap-3 shrink-0 group">
             <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-emerald-700/20 border border-emerald-600/30 group-hover:scale-105 transition-transform bg-white flex items-center justify-center p-0.5">
@@ -69,10 +69,9 @@ export default function Header({ onOpenBooking }) {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `px-3.5 py-2 text-xs font-semibold rounded-full transition-all ${
-                    isActive
-                      ? 'bg-emerald-700 text-white shadow-sm font-bold'
-                      : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
+                  `px-3.5 py-2 text-xs font-semibold rounded-full transition-all ${isActive
+                    ? 'bg-emerald-700 text-white shadow-sm font-bold'
+                    : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
                   }`
                 }
               >
@@ -84,11 +83,10 @@ export default function Header({ onOpenBooking }) {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setMoreDropdownOpen(!moreDropdownOpen)}
-                className={`px-3.5 py-2 text-xs font-semibold rounded-full flex items-center gap-1 transition-all cursor-pointer ${
-                  moreDropdownOpen
-                    ? 'bg-emerald-100 text-emerald-800'
-                    : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
-                }`}
+                className={`px-3.5 py-2 text-xs font-semibold rounded-full flex items-center gap-1 transition-all cursor-pointer ${moreDropdownOpen
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
+                  }`}
               >
                 <span>More</span>
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${moreDropdownOpen ? 'rotate-180 text-emerald-700' : ''}`} />
@@ -105,10 +103,9 @@ export default function Header({ onOpenBooking }) {
                         to={item.path}
                         onClick={() => setMoreDropdownOpen(false)}
                         className={({ isActive }) =>
-                          `flex items-start gap-3 p-2.5 rounded-xl transition-all ${
-                            isActive
-                              ? 'bg-emerald-50 text-emerald-800 font-bold'
-                              : 'hover:bg-slate-50 text-slate-800'
+                          `flex items-start gap-3 p-2.5 rounded-xl transition-all ${isActive
+                            ? 'bg-emerald-50 text-emerald-800 font-bold'
+                            : 'hover:bg-slate-50 text-slate-800'
                           }`
                         }
                       >
@@ -130,11 +127,11 @@ export default function Header({ onOpenBooking }) {
           {/* Desktop CTA Buttons */}
           <div className="hidden sm:flex items-center gap-2.5 shrink-0">
             <a
-              href="tel:+919876543210"
+              href="tel:+919949187262"
               className="flex items-center gap-2 px-3.5 py-2 rounded-full border border-slate-200 text-slate-800 hover:border-emerald-600 hover:text-emerald-700 font-semibold text-xs transition-all hover:bg-emerald-50/50"
             >
               <Phone className="w-3.5 h-3.5 text-emerald-600 fill-emerald-600/20" />
-              <span>+91 98765 43210</span>
+              <span>+91 99491 87262</span>
             </a>
 
             <button
@@ -187,10 +184,9 @@ export default function Header({ onOpenBooking }) {
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-center justify-between px-3 py-2.5 text-xs font-semibold rounded-xl transition-colors ${
-                    isActive
-                      ? 'bg-emerald-700 text-white font-bold'
-                      : 'text-slate-800 hover:bg-emerald-50 hover:text-emerald-700'
+                  `flex items-center justify-between px-3 py-2.5 text-xs font-semibold rounded-xl transition-colors ${isActive
+                    ? 'bg-emerald-700 text-white font-bold'
+                    : 'text-slate-800 hover:bg-emerald-50 hover:text-emerald-700'
                   }`
                 }
               >
@@ -210,10 +206,9 @@ export default function Header({ onOpenBooking }) {
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-center justify-between px-3 py-2 text-xs font-semibold rounded-xl transition-colors ${
-                    isActive
-                      ? 'bg-emerald-700 text-white font-bold'
-                      : 'text-slate-700 hover:bg-emerald-50 hover:text-emerald-700'
+                  `flex items-center justify-between px-3 py-2 text-xs font-semibold rounded-xl transition-colors ${isActive
+                    ? 'bg-emerald-700 text-white font-bold'
+                    : 'text-slate-700 hover:bg-emerald-50 hover:text-emerald-700'
                   }`
                 }
               >
@@ -225,11 +220,11 @@ export default function Header({ onOpenBooking }) {
 
           <div className="mt-6 pt-6 border-t border-slate-100 flex flex-col gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919949187262"
               className="flex items-center justify-center gap-2 py-3 rounded-xl border border-slate-200 text-slate-800 font-bold text-xs"
             >
               <Phone className="w-4 h-4 text-emerald-600" />
-              <span>Call Now: +91 98765 43210</span>
+              <span>Call Now: +91 99491 87262</span>
             </a>
 
             <button

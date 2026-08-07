@@ -1,5 +1,6 @@
 import React from 'react';
 import { MOSQUITO_SPECIES_DATA } from '../data/websiteData';
+import AnimatedSection, { AnimatedCard } from './AnimatedSection';
 import { ShieldAlert, Crosshair, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +12,7 @@ export default function MosquitoSpeciesRadar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+        <AnimatedSection className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <span className="px-4 py-1.5 rounded-full bg-rose-500/20 border border-rose-500/30 text-rose-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
             <ShieldAlert className="w-4 h-4 text-rose-400" />
             <span>Target Species Eradication Radar</span>
@@ -22,14 +23,15 @@ export default function MosquitoSpeciesRadar() {
           <p className="text-base sm:text-lg text-slate-300 font-normal">
             Different mosquitoes bite at different hours and carry different viral fevers. Our multi-stage treatment is engineered to destroy all 3 species.
           </p>
-        </div>
+        </AnimatedSection>
 
-        {/* 3 Mosquito Species Grid */}
+        {/* 3 Mosquito Species Grid with Staggered Motion */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {MOSQUITO_SPECIES_DATA.map((species) => (
-            <div
+          {MOSQUITO_SPECIES_DATA.map((species, index) => (
+            <AnimatedCard
               key={species.id}
-              className="glass-dark rounded-3xl border border-slate-700/80 shadow-2xl relative flex flex-col justify-between hover:border-emerald-500/60 transition-all group overflow-hidden"
+              index={index}
+              className="glass-dark rounded-3xl border border-slate-700/80 shadow-2xl relative flex flex-col justify-between hover:border-emerald-500/60 transition-all group overflow-hidden cursor-pointer"
             >
               <div>
                 {/* Species Graphic Scanner Image */}
@@ -95,7 +97,7 @@ export default function MosquitoSpeciesRadar() {
                 </button>
               </div>
 
-            </div>
+            </AnimatedCard>
           ))}
         </div>
 

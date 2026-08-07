@@ -48,17 +48,17 @@ export default function HeroSection({ onOpenBooking }) {
   };
 
   return (
-    <section id="home" className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-gradient-to-b from-emerald-50/70 via-slate-50 to-slate-50">
+    <section id="home" className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-mint-grid">
       {/* Background Decorative Blur Blobs */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-10 right-10 w-[30rem] h-[30rem] bg-amber-400/15 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          
+
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-5 text-left">
-            
+
             {/* Top Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/90 border border-emerald-200 text-emerald-800 text-xs font-semibold tracking-wide shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-emerald-600 animate-spin" style={{ animationDuration: '6s' }} />
@@ -107,11 +107,11 @@ export default function HeroSection({ onOpenBooking }) {
               </button>
 
               <a
-                href="tel:+919876543210"
+                href="tel:+919949187262"
                 className="py-3.5 px-7 text-sm sm:text-base font-bold rounded-full border-2 border-slate-300 text-slate-800 hover:border-emerald-600 hover:text-emerald-700 hover:bg-emerald-50/50 transition-all flex items-center justify-center gap-2.5"
               >
                 <Phone className="w-4 h-4 text-emerald-600 fill-emerald-600/20" />
-                <span>Call Now: +91 98765 43210</span>
+                <span>Call Now: +91 99491 87262</span>
               </a>
             </div>
 
@@ -147,18 +147,17 @@ export default function HeroSection({ onOpenBooking }) {
           {/* Right Side Interactive Image Carousel Slider */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
+
               {/* Main Image Carousel Frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
-                
+
                 {/* Images Slides Container */}
                 <div className="relative w-full h-[400px] sm:h-[440px] overflow-hidden">
                   {heroSlides.map((slide, idx) => (
                     <div
                       key={idx}
-                      className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                        idx === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105 pointer-events-none'
-                      }`}
+                      className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105 pointer-events-none'
+                        }`}
                     >
                       <img
                         src={slide.image}
@@ -166,7 +165,7 @@ export default function HeroSection({ onOpenBooking }) {
                         className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
-                      
+
                       {/* Dynamic Bottom Overlay Label */}
                       <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-dark text-white shadow-xl border border-slate-700/50">
                         <div className="flex items-center justify-between">
@@ -206,9 +205,8 @@ export default function HeroSection({ onOpenBooking }) {
                     <button
                       key={idx}
                       onClick={() => setCurrentSlide(idx)}
-                      className={`h-2 rounded-full transition-all cursor-pointer ${
-                        idx === currentSlide ? 'w-6 bg-emerald-400' : 'w-2 bg-slate-500/60 hover:bg-slate-400'
-                      }`}
+                      className={`h-2 rounded-full transition-all cursor-pointer ${idx === currentSlide ? 'w-6 bg-emerald-400' : 'w-2 bg-slate-500/60 hover:bg-slate-400'
+                        }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
                   ))}

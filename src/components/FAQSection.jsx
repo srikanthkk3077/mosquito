@@ -18,7 +18,7 @@ export default function FAQSection() {
   return (
     <section id="faq" className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
@@ -64,9 +64,8 @@ export default function FAQSection() {
                     <span>{faq.q}</span>
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 text-emerald-600' : ''
-                    }`}
+                    className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-emerald-600' : ''
+                      }`}
                   />
                 </button>
 
@@ -90,7 +89,7 @@ export default function FAQSection() {
           </p>
           <div className="pt-2 flex justify-center gap-4">
             <a
-              href="https://wa.me/919876543210?text=Hi%20MosquiShield,%20I%20have%20a%20question%20about%20mosquito%20treatment"
+              href="https://wa.me/919949187262?text=Hi%20MosquiShield,%20I%20have%20a%20question%20about%20mosquito%20treatment"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary py-3 px-6 text-sm font-semibold inline-flex items-center gap-2"

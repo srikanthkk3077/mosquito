@@ -399,7 +399,7 @@ export const FAQ_DATA = [
   },
   {
     q: 'How do I schedule a free site inspection?',
-    a: 'You can book directly via our online form, click the WhatsApp button, or call our 24/7 helpline at +91 98765 43210. Our team will instantly confirm your preferred slot.'
+    a: 'You can book directly via our online form, click the WhatsApp button, or call our 24/7 helpline at +91 99491 87262. Our team will instantly confirm your preferred slot.'
   }
 ];
 
