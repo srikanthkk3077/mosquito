@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-heading font-extrabold text-2xl tracking-tight text-white">
-                  MosquiShield<span className="text-amber-400">™</span>
+                  mosquitofightre<span className="text-amber-400">™</span>
                 </span>
                 <span className="block text-[10px] uppercase font-bold tracking-widest text-emerald-400 -mt-1">
                   Vector Control Hyderabad

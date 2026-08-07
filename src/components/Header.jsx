@@ -30,12 +30,12 @@ export default function Header({ onOpenBooking }) {
 
   // Secondary Links in the "More" Mega Dropdown
   const secondaryNav = [
-    { name: '5-Step Process', path: '/process', desc: 'How our vector misting works', icon: Layers },
+    // { name: '5-Step Process', path: '/process', desc: 'How our vector misting works', icon: Layers },
     { name: 'Gallery Showcase', path: '/gallery', desc: 'Photos of field operations', icon: Image },
     { name: 'Customer Reviews', path: '/reviews', desc: '2,480+ Google 5-Star ratings', icon: Star },
     { name: 'Areas We Serve', path: '/areas', desc: 'Gachibowli, Hitech City & hubs', icon: MapPin },
     { name: 'FAQ & Help', path: '/faq', desc: '15 Answers on safety & pets', icon: HelpCircle },
-    { name: 'Dengue Blog', path: '/blog', desc: 'Prevention guides & tips', icon: BookOpen },
+    // { name: 'Dengue Blog', path: '/blog', desc: 'Prevention guides & tips', icon: BookOpen },
   ];
 
   return (
@@ -54,7 +54,7 @@ export default function Header({ onOpenBooking }) {
             </div>
             <div>
               <span className="font-heading font-extrabold text-lg tracking-tight bg-gradient-to-r from-emerald-800 via-emerald-700 to-slate-900 bg-clip-text text-transparent">
-                MosquiShield<span className="text-amber-500">™</span>
+                mosquitofightre<span className="text-amber-500">™</span>
               </span>
               <span className="block text-[9px] uppercase font-bold tracking-widest text-emerald-600 -mt-1">
                 Hyderabad Vector Experts
