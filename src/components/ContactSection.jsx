@@ -106,7 +106,7 @@ export default function ContactSection() {
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-bold text-sm">MosquiShield™ Headquarters</h4>
+                <h4 className="font-bold text-sm">Mosquitofightre™ Headquarters</h4>
                 <p className="text-xs text-slate-300">Level 4, Cyber Towers, Hitech City, Hyderabad 500081</p>
               </div>
             </div>

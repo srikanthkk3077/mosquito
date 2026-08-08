@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
+import TawkChat from './components/TawkChat';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -59,6 +60,9 @@ export default function App() {
 
         {/* Floating Actions Bar & Chat Board */}
         <FloatingActions />
+
+        {/* Tawk.to Live Chat Integration with Pre-Chat Form */}
+        <TawkChat />
 
       </div>
     </Router>

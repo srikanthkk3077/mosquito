@@ -41,7 +41,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
               </div>
 
               <p className="text-slate-300 text-sm leading-relaxed font-normal">
-                Every MosquiShield™ residential treatment includes our legally backed 90-Day Protection Certificate. If mosquitoes reappear anytime within 90 days, we perform a complete re-treatment free of charge within 24 hours.
+                Every Mosquitofightre™ residential treatment includes our legally backed 90-Day Protection Certificate. If mosquitoes reappear anytime within 90 days, we perform a complete re-treatment free of charge within 24 hours.
               </p>
 
               {/* Warranty Certificate Benefits Checklist */}
@@ -87,7 +87,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
             </h2>
 
             <p className="text-base text-slate-300 leading-relaxed font-normal">
-              Most local pest control companies spray once and disappear. At MosquiShield™, we engineer long-lasting micro-capsule barrier films that bond to surfaces for up to 90 days.
+              Most local pest control companies spray once and disappear. At Mosquitofightre™, we engineer long-lasting micro-capsule barrier films that bond to surfaces for up to 90 days.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

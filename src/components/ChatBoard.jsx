@@ -19,7 +19,7 @@ export default function ChatBoard({ isOpen: externalIsOpen, onClose: externalOnC
     {
       id: 1,
       sender: 'bot',
-      text: '👋 Namaste! Welcome to MosquiShield™ Vector Assistant. How can I help protect your home from mosquitoes today?',
+      text: '👋 Namaste! Welcome to Mosquitofightre™ Vector Assistant. How can I help protect your home from mosquitoes today?',
       time: 'Just now',
       showQuickChips: true
     }
@@ -124,7 +124,7 @@ export default function ChatBoard({ isOpen: externalIsOpen, onClose: externalOnC
       {/* Floating Chat Board Modal */}
       {isOpen && (
         <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[380px] h-[520px] max-h-[85vh] bg-white rounded-3xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-300">
-          
+
           {/* Chat Header */}
           <div className="bg-slate-900 text-white p-4 flex items-center justify-between border-b border-slate-800 shrink-0">
             <div className="flex items-center gap-3">
@@ -136,7 +136,7 @@ export default function ChatBoard({ isOpen: externalIsOpen, onClose: externalOnC
               </div>
               <div>
                 <h3 className="font-heading font-extrabold text-sm text-white flex items-center gap-1.5">
-                  <span>MosquiShield™ Expert</span>
+                  <span>Mosquitofightre™ Expert</span>
                   <span className="text-[10px] px-2 py-0.2 bg-sky-500/30 text-sky-300 rounded-full border border-sky-400/40">AI</span>
                 </h3>
                 <p className="text-[11px] text-slate-300 font-normal">Online • Instant Vector Support</p>
@@ -163,7 +163,7 @@ export default function ChatBoard({ isOpen: externalIsOpen, onClose: externalOnC
 
           {/* Chat Messages Body */}
           <div className="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50">
-            
+
             {messages.map((msg) => (
               <div
                 key={msg.id}
@@ -177,11 +177,10 @@ export default function ChatBoard({ isOpen: externalIsOpen, onClose: externalOnC
                   )}
 
                   <div
-                    className={`p-3.5 rounded-2xl text-xs leading-relaxed ${
-                      msg.sender === 'user'
+                    className={`p-3.5 rounded-2xl text-xs leading-relaxed ${msg.sender === 'user'
                         ? 'bg-sky-500 text-white rounded-br-none shadow-md font-medium'
                         : 'bg-white text-slate-800 rounded-bl-none border border-slate-200/90 shadow-sm font-normal'
-                    }`}
+                      }`}
                   >
                     {msg.text.split('\n').map((line, lineIdx) => (
                       <p key={lineIdx} className={lineIdx > 0 ? 'mt-1.5' : ''}>

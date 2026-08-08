@@ -6,9 +6,9 @@ export default function LightboxModal({ item, type = 'image', onClose }) {
 
   return (
     <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-300">
-      
+
       <div className="bg-slate-900 text-white border border-slate-700/80 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
-        
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -37,7 +37,7 @@ export default function LightboxModal({ item, type = 'image', onClose }) {
                 {item.title}
               </h3>
               <p className="text-sm text-slate-300 leading-relaxed font-normal">
-                Field vector control operation executed by MosquiShield™ certified technicians in Hyderabad. Botanical non-toxic formula applied with German ULV equipment.
+                Field vector control operation executed by Mosquitofightre™ certified technicians in Hyderabad. Botanical non-toxic formula applied with German ULV equipment.
               </p>
             </div>
           </div>

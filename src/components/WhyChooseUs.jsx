@@ -25,7 +25,7 @@ export default function WhyChooseUs({ onOpenBooking }) {
         {/* Section Header */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="px-3.5 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
-            Why MosquiShield™ Superior Choice
+            Why Mosquitofightre™ Superior Choice
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Why Thousands of Hyderabad Homes Trust Us
