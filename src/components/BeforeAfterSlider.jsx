@@ -64,7 +64,7 @@ export default function BeforeAfterSlider() {
             <div className="absolute top-3 right-3 sm:top-6 sm:right-6 px-2.5 py-1 sm:px-4 sm:py-2 rounded-full glass-dark text-white text-[10px] sm:text-xs font-bold flex items-center gap-1.5 z-20 border border-emerald-400/40 shadow-xl">
               <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
               <span>
-                AFTER: <span className="hidden sm:inline">100% Bite-Free Zone</span><span className="inline sm:hidden">Protected</span>
+                AFTER: <span className="hidden sm:inline">Bite-Free Zone</span><span className="inline sm:hidden">Protected</span>
               </span>
             </div>
 

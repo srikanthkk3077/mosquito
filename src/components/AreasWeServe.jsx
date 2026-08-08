@@ -76,7 +76,7 @@ export default function AreasWeServe({ onOpenBooking }) {
                 </div>
                 <div>
                   <span className="text-slate-400 block font-medium">Avg Arrival:</span>
-                  <span className="font-bold text-sky-400 text-sm">{selectedArea.time}</span>
+                  <span className="font-bold text-sky-400 text-sm">{'1-2 Hours'}</span>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@ export default function AreasWeServe({ onOpenBooking }) {
 
                 <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs font-semibold text-sky-600">
                   <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5" /> {area.time}
+                    {/* <Clock className="w-3.5 h-3.5" /> {area.time} */}
                   </span>
                   <span>Select &rarr;</span>
                 </div>

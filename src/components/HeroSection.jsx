@@ -26,32 +26,32 @@ export default function HeroSection({ onOpenBooking }) {
 
   const propertyTypes = [
     {
+      id: 'villa',
+      icon: Building2,
+      title: 'Reliable Mosquito Control',
+      subtitle: 'Precision ULV Cold Fogging & Garden Barrier',
+      price: 'Free Inspection',
+      time: '< 2 Hour Arrival',
+      warranty: '90-Day Guarantee',
+      img: '/assets/technician_mist.png',
+      badge: '97% Rating'
+    },
+    {
       id: 'apartment',
       icon: Home,
-      title: '2-3 BHK Apartments',
-      subtitle: 'Zero-Odor Indoor Barrier',
+      title: '2-3 BHK Indoor Protection',
+      subtitle: 'Zero-Odor Micro-Mist Barrier',
       price: 'Free Inspection',
       time: '< 2 Hour Arrival',
       warranty: '90-Day Guarantee',
       img: '/assets/family.png',
-      badge: 'Indoor Safe'
-    },
-    {
-      id: 'villa',
-      icon: Building2,
-      title: 'Luxury Villas & Duplexes',
-      subtitle: 'Complete Indoor & Balcony Misting',
-      price: 'Free Inspection',
-      time: '< 2 Hour Arrival',
-      warranty: '90-Day Guarantee',
-      img: '/assets/hero.png',
-      badge: 'Most Popular'
+      badge: 'Baby Safe'
     },
     {
       id: 'garden',
       icon: Trees,
       title: 'Lawns & Open Gardens',
-      subtitle: 'Eco Foliage & Larvicide Barrier',
+      subtitle: 'Eco Foliage & Anti-Larval Barrier',
       price: 'Free Inspection',
       time: 'Same Day Service',
       warranty: '90-Day Guarantee',
@@ -60,17 +60,22 @@ export default function HeroSection({ onOpenBooking }) {
     }
   ];
 
-  const currentProp = propertyTypes.find(p => p.id === selectedProperty) || propertyTypes[1];
+  const currentProp = propertyTypes.find(p => p.id === selectedProperty) || propertyTypes[0];
 
   return (
     <section id="home" className="relative pt-24 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-mint-grid">
+      
+      {/* Smart Radar Rings Background Styling */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] sm:w-[900px] sm:h-[900px] rounded-full border border-sky-300/30 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] sm:w-[650px] sm:h-[650px] rounded-full border border-sky-400/20 pointer-events-none" />
+
       {/* Dynamic Ambient Background Glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[45rem] h-[25rem] bg-sky-400/20 rounded-full blur-[140px] pointer-events-none animate-pulse-glow" />
       <div className="absolute top-10 right-10 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* Animated Background Flying Mosquitoes & Shield Barriers */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-
+        
         {/* Floating Mosquito 1 (Top Left) */}
         <div className="absolute top-28 left-[10%] animate-mosquito-1 opacity-70">
           <MosquitoSVG className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-md" />
@@ -99,15 +104,13 @@ export default function HeroSection({ onOpenBooking }) {
 
         {/* Pulsing Bio-Shield Protection Ripple Rings */}
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full border-2 border-sky-400/30 animate-ping pointer-events-none" style={{ animationDuration: '4s' }} />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] rounded-full border border-sky-500/20 animate-pulse pointer-events-none" />
-
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
+        
         {/* Top Header Center Callout */}
         <div className="text-center max-w-4xl mx-auto space-y-5">
-
+          
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-sky-300/80 text-sky-900 text-xs font-extrabold tracking-wide shadow-md">
             <span className="relative flex h-2.5 w-2.5">
@@ -152,20 +155,30 @@ export default function HeroSection({ onOpenBooking }) {
 
         </div>
 
-        {/* Unique Feature Matrix Banner (3 Interactive Property Cards) */}
+        {/* Feature Matrix Banner */}
         <div className="mt-14 max-w-6xl mx-auto">
-
-          {/* Selected Plan High-Res Visual Preview Bar */}
-          <div className="mt-8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 relative">
+          {/* High-Res Visual Frame matching moskitokill design */}
+          <div className="mt-8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 relative group">
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-
-              <div className="lg:col-span-7 h-64 sm:h-80 relative overflow-hidden">
+              
+              {/* Left Image Frame with Floating 97% Rating Ribbon Badge */}
+              <div className="lg:col-span-6 h-80 sm:h-[420px] relative overflow-hidden bg-slate-950 flex items-center justify-center">
                 <img
                   src={currentProp.img}
                   alt={currentProp.title}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent" />
+
+                {/* Floating Yellow Customer Rating Ribbon Badge */}
+                <div className="absolute top-5 left-6 bg-amber-400 text-slate-950 px-4 py-2.5 rounded-2xl shadow-2xl border border-amber-300/80 z-20 flex flex-col items-center animate-bounce" style={{ animationDuration: '4s' }}>
+                  <div className="flex items-center gap-0.5 text-slate-950">
+                    <Star className="w-3.5 h-3.5 fill-slate-950 stroke-none" />
+                    <Star className="w-3.5 h-3.5 fill-slate-950 stroke-none" />
+                    <Star className="w-3.5 h-3.5 fill-slate-950 stroke-none" />
+                  </div>
+                  <span className="font-extrabold text-sm tracking-tight leading-none mt-1">97% Rating</span>
+                  <span className="text-[9px] uppercase font-bold text-slate-800 tracking-wider mt-0.5">Verified Clients</span>
+                </div>
 
                 <div className="absolute bottom-4 left-4 right-4 lg:hidden p-4 rounded-2xl glass-dark text-white">
                   <h4 className="font-extrabold text-base">{currentProp.title}</h4>
@@ -173,41 +186,41 @@ export default function HeroSection({ onOpenBooking }) {
                 </div>
               </div>
 
-              <div className="lg:col-span-5 p-6 sm:p-8 text-white space-y-5 bg-slate-950">
-                <div className="space-y-2">
-                  <span className="px-3 py-1 bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[10px] font-extrabold uppercase rounded-full tracking-wider">
-                    Official Guarantee Standard
+              {/* Right Content Panel */}
+              <div className="lg:col-span-6 p-6 sm:p-10 text-white space-y-6 bg-slate-950">
+                <div className="space-y-3">
+                  <span className="px-3.5 py-1 bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[11px] font-extrabold uppercase rounded-full tracking-wider">
+                    Mosquito Eradication Specialist
                   </span>
-                  <h3 className="font-heading font-extrabold text-2xl text-white">
+                  <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
                     {currentProp.title}
                   </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
-                    Includes German ULV cold fogging, anti-larval sump treatment, and 90 days of unconditional free re-treatment callbacks.
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                    Nothing ruins a peaceful evening like mosquitoes buzzing. Our trained technicians deliver fast, WHO-certified botanical ULV micro-fogging to turn your property into a bite-free zone.
                   </p>
                 </div>
 
-                <div className="space-y-2 pt-2 border-t border-slate-800">
-                  <div className="flex items-center gap-2 text-xs font-medium text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
-                    <span>WHO-Prequalified Odorless Bio-Actives</span>
+                <div className="space-y-2.5 pt-3 border-t border-slate-800">
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-slate-200">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-sky-400 shrink-0" />
+                    <span>Satisfaction Guarantee (90-Day Free Callback)</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-medium text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
-                    <span>Safe for Babies, Pets & Pregnant Women</span>
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-slate-200">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-sky-400 shrink-0" />
+                    <span>Customized Outdoor Lawn & Indoor Misting</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-medium text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
-                    <span>Same Day Dispatch Across Hyderabad</span>
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-slate-200">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-sky-400 shrink-0" />
+                    <span>Safe for Infants, Elderly & Household Pets</span>
                   </div>
                 </div>
 
                 <button
                   onClick={onOpenBooking}
-                  className="w-full btn-primary py-3.5 px-4 text-xs font-extrabold rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                  className="w-full btn-primary py-4 px-6 text-xs sm:text-sm font-extrabold rounded-2xl flex items-center justify-center gap-2 cursor-pointer shadow-xl shadow-sky-500/20 hover:scale-[1.02] transition-all"
                 >
-                  <Calendar className="w-4 h-4 shrink-0" />
-                  <span className="hidden sm:inline">Book Free Inspection For {currentProp.title}</span>
-                  <span className="inline sm:hidden">Book Free Site Inspection</span>
+                  <Calendar className="w-4.5 h-4.5 shrink-0" />
+                  <span>Book Free Inspection For {currentProp.title}</span>
                 </button>
               </div>
 

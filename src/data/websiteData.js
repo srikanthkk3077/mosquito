@@ -145,25 +145,25 @@ export const WHY_CHOOSE_US_DATA = [
   },
   {
     icon: 'Cpu',
-    title: 'water based mist spraw',
-    desc: 'Utilizing German cold fogging technology that reaches hidden cracks, foliage undersides, and vents.'
+    title: 'Water-Based Mist Spray',
+    desc: 'Our advanced water-based misting technology provides targeted mosquito control, reaching hidden cracks, foliage undersides, and hard-to-reach areas.'
   },
   
 ];
 
 export const AREAS_WE_SERVE = [
-  { name: 'Gachibowli', zip: '500032', time: '15-30 mins', tag: 'High Priority', hotspots: 'DLF Cyber City, Financial District, ORR Junction' },
-  { name: 'Hitech City', zip: '500081', time: '15-30 mins', tag: 'Popular', hotspots: 'Cyber Towers, Mindspace, Raheja IT Park' },
-  { name: 'Madhapur', zip: '500081', time: '20-30 mins', tag: 'Popular', hotspots: '100ft Road, Durgam Cheruvu View, Kavuri Hills' },
-  { name: 'Kondapur', zip: '500084', time: '20-35 mins', tag: 'Popular', hotspots: 'Botanical Garden Rd, Hafeezpet, Kothaguda' },
-  { name: 'Jubilee Hills', zip: '500033', time: '25-40 mins', tag: 'Luxury Estate', hotspots: 'Road No. 36, Peddamma Temple, Film Nagar' },
-  { name: 'Banjara Hills', zip: '500034', time: '25-40 mins', tag: 'Luxury Estate', hotspots: 'Road No. 1, 12, GVK One Mall Area' },
-  { name: 'Kukatpally', zip: '500072', time: '30-45 mins', tag: 'High Volume', hotspots: 'KPHB Colony, Forum Mall, JNTU Circle' },
-  { name: 'Miyapur', zip: '500049', time: '30-45 mins', tag: 'Residential', hotspots: 'Miyapur X Roads, Bachupally Rd, Ameenpur' },
-  { name: 'Financial District', zip: '500032', time: '15-30 mins', tag: 'Corporate Hub', hotspots: 'Nanakramguda, Kokapet, Neopolis' },
-  { name: 'Tellapur', zip: '500019', time: '25-40 mins', tag: 'Gated Villas', hotspots: 'My Home Bhooja, Aparna Cyber Life Zone' },
-  { name: 'Manikonda', zip: '500089', time: '25-45 mins', tag: 'Residential', hotspots: 'Lanco Hills, Puppalguda, Khajaguda' },
-  { name: 'Begumpet & Secunderabad', zip: '500016', time: '35-50 mins', tag: 'Central Metro', hotspots: 'Penderghast Rd, M.G. Road, Paradise' }
+  { name: 'Gachibowli', zip: '500032', tag: 'High Priority', hotspots: 'DLF Cyber City, Financial District, ORR Junction' },
+  { name: 'Hitech City', zip: '500081', tag: 'Popular', hotspots: 'Cyber Towers, Mindspace, Raheja IT Park' },
+  { name: 'Madhapur', zip: '500081', tag: 'Popular', hotspots: '100ft Road, Durgam Cheruvu View, Kavuri Hills' },
+  { name: 'Kondapur', zip: '500084', tag: 'Popular', hotspots: 'Botanical Garden Rd, Hafeezpet, Kothaguda' },
+  { name: 'Jubilee Hills', zip: '500033', tag: 'Luxury Estate', hotspots: 'Road No. 36, Peddamma Temple, Film Nagar' },
+  { name: 'Banjara Hills', zip: '500034', tag: 'Luxury Estate', hotspots: 'Road No. 1, 12, GVK One Mall Area' },
+  { name: 'Kukatpally', zip: '500072', tag: 'High Volume', hotspots: 'KPHB Colony, Forum Mall, JNTU Circle' },
+  { name: 'Miyapur', zip: '500049', tag: 'Residential', hotspots: 'Miyapur X Roads, Bachupally Rd, Ameenpur' },
+  { name: 'Financial District', zip: '500032', tag: 'Corporate Hub', hotspots: 'Nanakramguda, Kokapet, Neopolis' },
+  { name: 'Tellapur', zip: '500019', tag: 'Gated Villas', hotspots: 'My Home Bhooja, Aparna Cyber Life Zone' },
+  { name: 'Manikonda', zip: '500089', tag: 'Residential', hotspots: 'Lanco Hills, Puppalguda, Khajaguda' },
+  { name: 'Begumpet & Secunderabad', zip: '500016', tag: 'Central Metro', hotspots: 'Penderghast Rd, M.G. Road, Paradise' }
 ];
 
 export const TESTIMONIALS_DATA = [
