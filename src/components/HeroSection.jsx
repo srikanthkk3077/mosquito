@@ -122,7 +122,7 @@ export default function HeroSection({ onOpenBooking }) {
 
           {/* Main Headline */}
           <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.12] tracking-tight">
-            Zero Mosquitoes. <br />
+            Mosquitofightre. <br />
             <span className="bg-gradient-to-r from-sky-500 via-blue-600 to-sky-600 bg-clip-text text-transparent">
               100% Eco-Friendly Protection.
             </span>
@@ -212,6 +212,10 @@ export default function HeroSection({ onOpenBooking }) {
                   <div className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-slate-200">
                     <CheckCircle2 className="w-4.5 h-4.5 text-sky-400 shrink-0" />
                     <span>Safe for Infants, Elderly & Household Pets</span>
+                  </div>
+                  <div className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-slate-200">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-sky-400 shrink-0" />
+                    <span>Mist blower mam ware</span>
                   </div>
                 </div>
 

@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="bg-gradient-to-b from-sky-900 via-blue-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-4">
           <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest">
-            About MosquiShield™
+            About Mosquitofightre™
           </span>
           <h1 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
             Protecting Hyderabad Families Since 2014

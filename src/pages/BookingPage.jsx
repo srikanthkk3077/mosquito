@@ -28,10 +28,10 @@ export default function BookingPage() {
         </div>
 
         {/* Value Guarantee Badges Strip */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
           {[
             { icon: Clock, title: 'Same Day Dispatch', desc: '< 2 Hour Arrival in Hyderabad' },
-            { icon: ShieldCheck, title: '90-Day Free Callback', desc: 'Unconditional Re-spray Warranty' },
+            // { icon: ShieldCheck, title: '90-Day Free Callback', desc: 'Unconditional Re-spray Warranty' },
             { icon: CheckCircle2, title: '100% Odorless & Safe', desc: 'Harmless for Infants & Household Pets' }
           ].map((item, idx) => {
             const IconComp = item.icon;
