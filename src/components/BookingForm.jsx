@@ -34,29 +34,9 @@ export default function BookingForm({ isModal = false, onClose }) {
   };
 
   return (
-    <section id="book" className={`${isModal ? 'p-2 sm:p-4' : 'py-12 sm:py-24 pb-28 sm:pb-32 bg-slate-900 text-white relative overflow-hidden'}`}>
-
-      {!isModal && (
-        <div className="absolute top-1/4 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-[120px] pointer-events-none" />
-      )}
-
-      <div className={`${isModal ? 'w-full' : 'max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'}`}>
-
-        {!isModal && (
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3 sm:space-y-4">
-            <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest">
-              Instant Online Booking
-            </span>
-            <h2 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-              Book Your Free Inspection
-            </h2>
-            <p className="text-xs sm:text-base lg:text-lg text-slate-300 font-normal">
-              Select your preferred service & time slot. Our certified technician will arrive equipped for complete vector management.
-            </p>
-          </div>
-        )}
-
-        <div className={`glass-dark p-5 sm:p-10 rounded-3xl border border-slate-700/80 shadow-2xl relative ${isModal ? 'bg-slate-900 text-white' : ''}`}>
+    <section id="book" className={`${isModal ? 'p-2 sm:p-4' : 'w-full'}`}>
+      <div className="w-full">
+        <div className="bg-slate-950 text-white p-5 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl relative">
 
           {isModal && (
             <div className="flex items-center justify-between pb-6 mb-6 border-b border-slate-800">

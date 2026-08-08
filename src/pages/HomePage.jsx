@@ -43,7 +43,7 @@ export default function HomePage() {
       <ServicesSection onOpenBooking={() => navigate('/book')} />
 
       {/* 9. 5-Step Vector Process */}
-      <ProcessSection onOpenBooking={() => navigate('/book')} />
+      {/* <ProcessSection onOpenBooking={() => navigate('/book')} /> */}
 
       {/* 10. Health & Protection Benefits */}
       <HealthBenefits onOpenBooking={() => navigate('/book')} />
