@@ -19,7 +19,7 @@ export default function Header({ onOpenBooking }) {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'About Us', path: '/about' },
-    { name: 'Reviews', path: '/reviews' },
+    {name:'Gallery' , path: '/gallery'},
     { name: 'FAQ & Help', path: '/faq' },
   ];
 
