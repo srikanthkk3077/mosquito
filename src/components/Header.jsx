@@ -18,7 +18,7 @@ export default function Header({ onOpenBooking }) {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
-    { name: 'Process & Tech', path: '/process' },
+    {name : 'About Us', path : '/about'},
     { name: 'Reviews', path: '/reviews' },
     { name: 'FAQ & Help', path: '/faq' },
   ];
