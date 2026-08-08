@@ -70,7 +70,7 @@ export default function HeroSection({ onOpenBooking }) {
 
       {/* Animated Background Flying Mosquitoes & Shield Barriers */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        
+
         {/* Floating Mosquito 1 (Top Left) */}
         <div className="absolute top-28 left-[10%] animate-mosquito-1 opacity-70">
           <MosquitoSVG className="w-10 h-10 sm:w-12 sm:h-12 drop-shadow-md" />
@@ -104,10 +104,10 @@ export default function HeroSection({ onOpenBooking }) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Top Header Center Callout */}
         <div className="text-center max-w-4xl mx-auto space-y-5">
-          
+
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-sky-300/80 text-sky-900 text-xs font-extrabold tracking-wide shadow-md">
             <span className="relative flex h-2.5 w-2.5">
@@ -158,7 +158,7 @@ export default function HeroSection({ onOpenBooking }) {
           {/* Selected Plan High-Res Visual Preview Bar */}
           <div className="mt-8 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 relative">
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-              
+
               <div className="lg:col-span-7 h-64 sm:h-80 relative overflow-hidden">
                 <img
                   src={currentProp.img}
@@ -166,7 +166,7 @@ export default function HeroSection({ onOpenBooking }) {
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent" />
-                
+
                 <div className="absolute bottom-4 left-4 right-4 lg:hidden p-4 rounded-2xl glass-dark text-white">
                   <h4 className="font-extrabold text-base">{currentProp.title}</h4>
                   <p className="text-xs text-slate-300 mt-0.5">{currentProp.subtitle}</p>

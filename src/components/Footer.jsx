@@ -125,10 +125,6 @@ export default function Footer() {
                 </button>
               </form>
             )}
-
-            <div className="pt-2 text-[11px] text-slate-500">
-              Lic. No: CGB/HYD/2016/9821 • ISO 9001:2015 Certified
-            </div>
           </div>
 
         </div>

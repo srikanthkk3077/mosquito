@@ -140,19 +140,15 @@ export const WHY_CHOOSE_US_DATA = [
   },
   {
     icon: 'Heart',
-    title: '100% Pet & Child Safe Guarantee',
+    title: '100% Pet & Child Safe',
     desc: 'Eco-certified formulations engineered to eliminate mosquitoes while remaining harmless to kids & pets.'
   },
   {
     icon: 'Cpu',
-    title: 'German Cold Fogging Technology',
-    desc: 'Utilizing ultra-low volume (ULV) cold mist machines that reach hidden cracks, foliage undersides, and vents.'
+    title: 'water based mist spraw',
+    desc: 'Utilizing German cold fogging technology that reaches hidden cracks, foliage undersides, and vents.'
   },
-  {
-    icon: 'RefreshCw',
-    title: '90-Day Unconditional Callback Warranty',
-    desc: 'If mosquitoes reappear within your warranty period, our technicians re-treat your premises completely free of charge.'
-  }
+  
 ];
 
 export const AREAS_WE_SERVE = [
