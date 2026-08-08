@@ -38,12 +38,12 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-theme-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
+          <span className="px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
             Get In Touch
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -64,18 +64,18 @@ export default function ContactSection() {
                 className="glass-card p-6 rounded-3xl border border-slate-200/90 bg-white flex flex-col justify-between hover-lift group"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <IconComp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-slate-900 text-base mb-1">{card.title}</h3>
-                  <p className="font-extrabold text-emerald-800 text-sm mb-1">{card.value}</p>
+                  <p className="font-extrabold text-sky-600 text-sm mb-1">{card.value}</p>
                   <p className="text-xs text-slate-500 font-normal">{card.sub}</p>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100">
                   <a
                     href={card.action}
-                    className="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                    className="text-xs font-bold text-sky-600 hover:text-sky-800 flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                   >
                     <span>{card.actionText}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -102,7 +102,7 @@ export default function ContactSection() {
           {/* Map Overlay Card */}
           <div className="absolute bottom-6 left-6 p-4 rounded-2xl glass-dark text-white border border-white/20 hidden sm:block">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-sky-500 text-white flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>

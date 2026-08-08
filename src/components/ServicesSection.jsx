@@ -24,8 +24,8 @@ export default function ServicesSection({ onOpenBooking }) {
         
         {/* Header */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <span className="px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-sky-600" />
             <span>Targeted Vector Management</span>
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -44,8 +44,8 @@ export default function ServicesSection({ onOpenBooking }) {
               onClick={() => setActiveTab(cat.id)}
               className={`px-4 sm:px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
                 activeTab === cat.id
-                  ? 'bg-emerald-700 text-white shadow-lg shadow-emerald-700/30 scale-105'
-                  : 'bg-white text-slate-700 hover:bg-emerald-50 border border-slate-200'
+                  ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/30 scale-105'
+                  : 'bg-white text-slate-700 hover:bg-sky-50 border border-slate-200'
               }`}
             >
               {cat.label}
@@ -73,7 +73,7 @@ export default function ServicesSection({ onOpenBooking }) {
                   
                   {/* Tag Pill */}
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-emerald-600 text-white font-extrabold text-xs rounded-full shadow-md">
+                    <span className="px-3 py-1 bg-sky-600 text-white font-extrabold text-xs rounded-full shadow-md">
                       {service.tag}
                     </span>
                   </div>
@@ -88,7 +88,7 @@ export default function ServicesSection({ onOpenBooking }) {
 
                 {/* Content */}
                 <div className="p-6 sm:p-8 space-y-4">
-                  <h3 className="font-heading font-extrabold text-xl text-slate-900 group-hover:text-emerald-700 transition-colors">
+                  <h3 className="font-heading font-extrabold text-xl text-slate-900 group-hover:text-sky-600 transition-colors">
                     {service.title}
                   </h3>
 
@@ -99,7 +99,7 @@ export default function ServicesSection({ onOpenBooking }) {
                   <div className="space-y-2 pt-2 border-t border-slate-100">
                     {service.features.map((feat, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                        <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <Check className="w-4 h-4 text-sky-600 shrink-0" />
                         <span>{feat}</span>
                       </div>
                     ))}

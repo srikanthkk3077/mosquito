@@ -12,15 +12,15 @@ export default function MosquitoRiskCalculator() {
   const selectedSeverity = CALCULATOR_OPTIONS.severities[severityIdx];
 
   return (
-    <section className="py-20 bg-emerald-950 text-white relative overflow-hidden border-y border-emerald-800">
+    <section className="py-20 bg-sky-950 text-white relative overflow-hidden border-y border-sky-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Text Explanation */}
           <div className="lg:col-span-5 space-y-5">
-            <span className="px-3.5 py-1.5 rounded-full bg-emerald-800/80 border border-emerald-600 text-emerald-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
-              <Calculator className="w-4 h-4 text-emerald-400" />
+            <span className="px-3.5 py-1.5 rounded-full bg-sky-800/80 border border-sky-600 text-sky-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
+              <Calculator className="w-4 h-4 text-sky-400" />
               <span>Interactive Property Audit</span>
             </span>
 
@@ -38,8 +38,8 @@ export default function MosquitoRiskCalculator() {
                 'Calculates Exact Treatment Price',
                 'Zero Obligation Free Site Audit'
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2 text-xs font-semibold text-emerald-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <div key={i} className="flex items-center gap-2 text-xs font-semibold text-sky-300">
+                  <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -48,17 +48,17 @@ export default function MosquitoRiskCalculator() {
 
           {/* Right Interactive Form Box */}
           <div className="lg:col-span-7">
-            <div className="glass-dark p-6 sm:p-10 rounded-3xl border border-emerald-800/80 shadow-2xl space-y-6">
+            <div className="glass-dark p-6 sm:p-10 rounded-3xl border border-sky-800/80 shadow-2xl space-y-6">
               
               {/* Step 1: Select Property Type */}
               <div className="space-y-2">
-                <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300">
+                <label className="block text-xs font-bold uppercase tracking-wider text-sky-300">
                   1. Select Property Type & Size *
                 </label>
                 <select
                   value={propertyIdx}
                   onChange={(e) => setPropertyIdx(Number(e.target.value))}
-                  className="w-full px-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 focus:border-emerald-500 text-white text-sm outline-none cursor-pointer"
+                  className="w-full px-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 focus:border-sky-500 text-white text-sm outline-none cursor-pointer"
                 >
                   {CALCULATOR_OPTIONS.propertyTypes.map((prop, idx) => (
                     <option key={idx} value={idx} className="bg-slate-900 text-white">
@@ -70,7 +70,7 @@ export default function MosquitoRiskCalculator() {
 
               {/* Step 2: Select Severity */}
               <div className="space-y-2">
-                <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300">
+                <label className="block text-xs font-bold uppercase tracking-wider text-sky-300">
                   2. Select Current Mosquito Infestation Level *
                 </label>
                 <div className="space-y-2">
@@ -81,7 +81,7 @@ export default function MosquitoRiskCalculator() {
                       onClick={() => setSeverityIdx(idx)}
                       className={`w-full p-3.5 rounded-xl border text-left text-xs font-semibold transition-all flex items-center justify-between cursor-pointer ${
                         severityIdx === idx
-                          ? 'border-emerald-400 bg-emerald-900/60 text-white ring-2 ring-emerald-500/30'
+                          ? 'border-sky-400 bg-sky-900/60 text-white ring-2 ring-sky-500/30'
                           : 'border-slate-800 bg-slate-900/60 text-slate-400 hover:border-slate-700'
                       }`}
                     >
@@ -93,7 +93,7 @@ export default function MosquitoRiskCalculator() {
               </div>
 
               {/* Result Summary Box */}
-              <div className="p-5 rounded-2xl bg-slate-900/90 border border-emerald-700/80 space-y-3">
+              <div className="p-5 rounded-2xl bg-slate-900/90 border border-sky-700/80 space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-slate-400 font-medium">Assessed Threat Level:</span>
                   <span className="px-3 py-1 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs font-extrabold rounded-full">
@@ -108,7 +108,7 @@ export default function MosquitoRiskCalculator() {
                   </div>
                   <div className="text-right">
                     <span className="text-xs text-slate-400 block font-medium">Starting Price:</span>
-                    <span className="font-extrabold text-emerald-400 text-xl">{selectedProperty.price}</span>
+                    <span className="font-extrabold text-sky-400 text-xl">{selectedProperty.price}</span>
                   </div>
                 </div>
               </div>

@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-6">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-white p-1 shadow-lg shadow-emerald-600/30 overflow-hidden flex items-center justify-center border border-emerald-500/40">
+              <div className="w-12 h-12 rounded-2xl bg-white p-1 shadow-lg shadow-sky-500/30 overflow-hidden flex items-center justify-center border border-sky-500/40">
                 <img
                   src="/assets/logo.png"
                   alt="MosquiShield Icon"
@@ -34,14 +34,14 @@ export default function Footer() {
                 <span className="font-heading font-extrabold text-2xl tracking-tight text-white">
                   mosquitofightre<span className="text-amber-400">™</span>
                 </span>
-                <span className="block text-[10px] uppercase font-bold tracking-widest text-emerald-400 -mt-1">
+                <span className="block text-[10px] uppercase font-bold tracking-widest text-sky-400 -mt-1">
                   Vector Control Hyderabad
                 </span>
               </div>
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed font-normal">
-              Hyderabad’s premier Govt-Approved, ISO 9001:2015 Certified eco-friendly mosquito control service provider. Protecting luxury homes, apartments, & corporate IT parks with zero-odor bio-mist.
+              Hyderabad's premier mosquito control service provider. Protecting luxury homes, apartments, & corporate IT parks with zero-odor bio-mist.
             </p>
 
             {/* Google Rating Badge */}
@@ -64,17 +64,14 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-sm text-slate-400">
-              <li><Link to="/" className="hover:text-emerald-400 transition-colors">Home</Link></li>
-              <li><Link to="/about" className="hover:text-emerald-400 transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Services</Link></li>
-              <li><Link to="/process" className="hover:text-emerald-400 transition-colors">5-Step Process</Link></li>
-              <li><Link to="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link></li>
-              <li><Link to="/gallery" className="hover:text-emerald-400 transition-colors">Gallery</Link></li>
-              <li><Link to="/reviews" className="hover:text-emerald-400 transition-colors">Reviews</Link></li>
-              <li><Link to="/areas" className="hover:text-emerald-400 transition-colors">Areas We Serve</Link></li>
-              <li><Link to="/faq" className="hover:text-emerald-400 transition-colors">FAQ</Link></li>
-              <li><Link to="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link></li>
-              <li><Link to="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
+              <li><Link to="/" className="hover:text-sky-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-sky-400 transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Services</Link></li>
+              <li><Link to="/process" className="hover:text-sky-400 transition-colors">5-Step Process</Link></li>
+              <li><Link to="/gallery" className="hover:text-sky-400 transition-colors">Gallery</Link></li>
+              <li><Link to="/reviews" className="hover:text-sky-400 transition-colors">Reviews</Link></li>
+              <li><Link to="/faq" className="hover:text-sky-400 transition-colors">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-sky-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -84,12 +81,12 @@ export default function Footer() {
               Mosquito Services
             </h4>
             <ul className="space-y-2.5 text-sm text-slate-400">
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Residential Micro-Misting</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Corporate IT Park Sanitization</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Luxury Villa Protection</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Landscape & Garden Fogging</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Anti-Larval Biological Control</Link></li>
-              <li><Link to="/services" className="hover:text-emerald-400 transition-colors">Automated Mist Systems</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Residential Micro-Misting</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Corporate IT Park Sanitization</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Luxury Villa Protection</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Landscape & Garden Fogging</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Anti-Larval Biological Control</Link></li>
+              <li><Link to="/services" className="hover:text-sky-400 transition-colors">Automated Mist Systems</Link></li>
             </ul>
           </div>
 
@@ -103,8 +100,8 @@ export default function Footer() {
             </p>
 
             {subscribed ? (
-              <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <div className="p-3 rounded-xl bg-sky-950/80 border border-sky-500/50 text-sky-300 text-xs font-bold flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
                 <span>Thank you! You are subscribed to Dengue Alerts.</span>
               </div>
             ) : (
@@ -116,7 +113,7 @@ export default function Footer() {
                     placeholder="Enter your email address..."
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:border-emerald-500 text-white text-xs outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:border-sky-500 text-white text-xs outline-none"
                   />
                 </div>
                 <button

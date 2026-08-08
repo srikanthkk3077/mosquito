@@ -16,12 +16,12 @@ export default function FAQSection() {
   );
 
   return (
-    <section id="faq" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="faq" className="py-24 bg-theme-light relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
+          <span className="px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
             100% Transparency
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -40,7 +40,7 @@ export default function FAQSection() {
                 placeholder="Search FAQ keywords (e.g. pets, warranty, Dengue)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-3.5 rounded-full border border-slate-300 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-xs sm:text-sm outline-none transition-all shadow-sm"
+                className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-3.5 rounded-full border border-slate-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 text-slate-900 text-xs sm:text-sm outline-none transition-all shadow-sm"
               />
             </div>
           </div>
@@ -57,16 +57,16 @@ export default function FAQSection() {
               >
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-emerald-700 transition-colors cursor-pointer"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-sky-600 transition-colors cursor-pointer"
                 >
                   <span className="flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center text-xs shrink-0 font-extrabold">
+                    <span className="w-8 h-8 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center text-xs shrink-0 font-extrabold">
                       Q{index + 1}
                     </span>
                     <span>{faq.q}</span>
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-emerald-600' : ''
+                    className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-sky-600' : ''
                       }`}
                   />
                 </button>
@@ -82,11 +82,11 @@ export default function FAQSection() {
         </div>
 
         {/* Still Have Questions Banner */}
-        <div className="mt-12 p-8 rounded-3xl bg-emerald-100/60 border border-emerald-200 text-center space-y-3">
-          <h3 className="font-heading font-bold text-xl text-emerald-950">
+        <div className="mt-12 p-8 rounded-3xl bg-sky-100/60 border border-sky-200 text-center space-y-3">
+          <h3 className="font-heading font-bold text-xl text-sky-950">
             Have a Specific Question Not Answered Above?
           </h3>
-          <p className="text-sm text-emerald-800">
+          <p className="text-sm text-sky-900">
             Our vector control specialists are available 24/7 on WhatsApp & Phone to answer your queries.
           </p>
           <div className="pt-2 flex justify-center gap-4">

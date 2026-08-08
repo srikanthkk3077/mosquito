@@ -38,13 +38,13 @@ export default function ProcessSection({ onOpenBooking }) {
   return (
     <section id="process" className="py-24 bg-slate-900 text-white relative overflow-hidden">
       {/* Background ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[20rem] bg-emerald-600/10 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[20rem] bg-sky-600/10 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest">
+          <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest">
             Streamlined 5-Step Process
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -60,7 +60,7 @@ export default function ProcessSection({ onOpenBooking }) {
 
           {/* Animated Connecting Line (Desktop) */}
           <div className="hidden lg:block absolute top-14 left-10 right-10 h-1 bg-slate-800 -z-0">
-            <div className="h-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-amber-400 animate-pulse" />
+            <div className="h-full bg-gradient-to-r from-sky-500 via-blue-400 to-amber-400 animate-pulse" />
           </div>
 
           {steps.map((step, index) => {
@@ -69,7 +69,7 @@ export default function ProcessSection({ onOpenBooking }) {
               <div key={index} className="relative z-10 flex flex-col items-center text-center group">
 
                 {/* Step Circle */}
-                <div className="w-20 h-20 rounded-3xl bg-slate-800 border-2 border-emerald-500/40 text-emerald-400 flex items-center justify-center mb-6 shadow-xl group-hover:border-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-all group-hover:scale-110">
+                <div className="w-20 h-20 rounded-3xl bg-slate-800 border-2 border-sky-500/40 text-sky-400 flex items-center justify-center mb-6 shadow-xl group-hover:border-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all group-hover:scale-110">
                   <IconComponent className="w-9 h-9 stroke-[2]" />
                 </div>
 
@@ -79,7 +79,7 @@ export default function ProcessSection({ onOpenBooking }) {
                 </span>
 
                 {/* Title */}
-                <h3 className="font-heading font-bold text-lg text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                <h3 className="font-heading font-bold text-lg text-white mb-2 group-hover:text-sky-300 transition-colors">
                   {step.title}
                 </h3>
 

@@ -18,7 +18,7 @@ export default function AreasWeServe({ onOpenBooking }) {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
+          <span className="px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
             Hyderabad Express Coverage
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -37,7 +37,7 @@ export default function AreasWeServe({ onOpenBooking }) {
                 placeholder="Search your locality or pin code (e.g. Gachibowli, 500081)..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-3.5 rounded-full border border-slate-300 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-xs sm:text-sm outline-none transition-all shadow-sm"
+                className="w-full pl-10 sm:pl-12 pr-4 py-3 sm:py-3.5 rounded-full border border-slate-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 text-slate-900 text-xs sm:text-sm outline-none transition-all shadow-sm"
               />
             </div>
           </div>
@@ -49,11 +49,11 @@ export default function AreasWeServe({ onOpenBooking }) {
           {/* Left Side Interactive Map Mockup */}
           <div className="lg:col-span-5 bg-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-800">
             <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+              <div className="flex items-center gap-2 text-sky-400 font-bold text-sm">
                 <MapPin className="w-5 h-5" />
                 <span>Hyderabad Metro Command Hub</span>
               </div>
-              <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-semibold">
+              <span className="px-3 py-1 bg-sky-500/20 text-sky-300 rounded-full text-xs font-semibold">
                 Live Status: 100% Active
               </span>
             </div>
@@ -76,7 +76,7 @@ export default function AreasWeServe({ onOpenBooking }) {
                 </div>
                 <div>
                   <span className="text-slate-400 block font-medium">Avg Arrival:</span>
-                  <span className="font-bold text-emerald-400 text-sm">{selectedArea.time}</span>
+                  <span className="font-bold text-sky-400 text-sm">{selectedArea.time}</span>
                 </div>
               </div>
 
@@ -95,10 +95,10 @@ export default function AreasWeServe({ onOpenBooking }) {
             </div>
 
             {/* Stylized Vector Map Visual */}
-            <div className="h-48 rounded-2xl bg-emerald-950/40 border border-emerald-800/50 relative overflow-hidden flex items-center justify-center p-4 text-center">
-              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#66BB6A_1px,transparent_1px)] [background-size:16px_16px]" />
+            <div className="h-48 rounded-2xl bg-sky-950/40 border border-sky-800/50 relative overflow-hidden flex items-center justify-center p-4 text-center">
+              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#38BDF8_1px,transparent_1px)] [background-size:16px_16px]" />
               <div className="relative z-10 space-y-2">
-                <ShieldCheck className="w-10 h-10 text-emerald-400 mx-auto animate-bounce" />
+                <ShieldCheck className="w-10 h-10 text-sky-400 mx-auto animate-bounce" />
                 <p className="text-xs text-slate-300 font-semibold">
                   24 Mobile Technician Vans Stationed Across Hyderabad ORR Corridor
                 </p>
@@ -115,8 +115,8 @@ export default function AreasWeServe({ onOpenBooking }) {
                 onClick={() => setSelectedArea(area)}
                 className={`p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between ${
                   selectedArea.name === area.name
-                    ? 'border-emerald-600 bg-emerald-50/80 shadow-md ring-2 ring-emerald-600/30'
-                    : 'border-slate-200/80 bg-white hover:border-emerald-400 hover:bg-slate-50'
+                    ? 'border-sky-500 bg-sky-50/80 shadow-md ring-2 ring-sky-500/30'
+                    : 'border-slate-200/80 bg-white hover:border-sky-400 hover:bg-slate-50'
                 }`}
               >
                 <div>
@@ -131,7 +131,7 @@ export default function AreasWeServe({ onOpenBooking }) {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs font-semibold text-emerald-700">
+                <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs font-semibold text-sky-600">
                   <span className="flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" /> {area.time}
                   </span>

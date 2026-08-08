@@ -36,11 +36,11 @@ export const MOSQUITO_SPECIES_DATA = [
 
 export const CALCULATOR_OPTIONS = {
   propertyTypes: [
-    { label: '2BHK Apartment (1000 - 1300 sq ft)', score: 2, price: '₹1,499' },
-    { label: '3BHK / 4BHK Apartment (1400 - 2500 sq ft)', score: 3, price: '₹1,999' },
-    { label: 'Gated Villa & Private Garden (3000+ sq ft)', score: 5, price: '₹2,999' },
-    { label: 'Commercial Office / IT Park', score: 4, price: 'Custom Quote' },
-    { label: 'Restaurant / Outdoor Dining Space', score: 4, price: '₹2,499' }
+    { label: '2BHK Apartment (1000 - 1300 sq ft)', score: 2, },
+    { label: '3BHK / 4BHK Apartment (1400 - 2500 sq ft)', score: 3 },
+    { label: 'Gated Villa & Private Garden (3000+ sq ft)', score: 5 },
+    { label: 'Commercial Office / IT Park', score: 4 },
+    { label: 'Restaurant / Outdoor Dining Space', score: 4 }
   ],
   severities: [
     { label: 'Severe Mosquito Swarms & Bites Daily', threat: 'CRITICAL (Dengue Hazard Level 92%)' },
@@ -56,7 +56,6 @@ export const SERVICES_DATA = [
     category: 'residential',
     tag: 'Most Popular',
     image: '/assets/hero.png',
-    price: '₹1,499',
     description: '3-Stage odourless botanical micro-mist treatment targeting indoor corners, curtains, furniture undersides, and balcony vegetation.',
     features: [
       '100% Odourless & Non-Staining Formula',
@@ -71,7 +70,6 @@ export const SERVICES_DATA = [
     category: 'commercial',
     tag: 'Enterprise',
     image: '/assets/commercial.png',
-    price: 'Custom Quote',
     description: 'Discreet non-intrusive vector management for corporate offices, IT hubs, and commercial complexes across Hitech City & Gachibowli.',
     features: [
       'After-Hours / Weekend Operation',
@@ -86,7 +84,6 @@ export const SERVICES_DATA = [
     category: 'residential',
     tag: 'Community',
     image: '/assets/family.png',
-    price: '₹4,999 / block',
     description: 'Comprehensive block-wide treatment for high-rise residential towers including basements, elevator shafts, and clubhouses.',
     features: [
       'Basement Anti-Larval Spraying',
@@ -101,7 +98,6 @@ export const SERVICES_DATA = [
     category: 'residential',
     tag: 'Premium',
     image: '/assets/hero.png',
-    price: '₹2,999',
     description: 'Bespoke indoor and perimeter barrier treatment designed specifically for multi-story gated villas and private estates.',
     features: [
       'Perimeter Barrier Shield Creation',
@@ -116,7 +112,6 @@ export const SERVICES_DATA = [
     category: 'specialized',
     tag: 'Medical Grade',
     image: '/assets/commercial.png',
-    price: 'Custom Quote',
     description: 'Medical-grade zero-residual vector control engineered strictly for ICUs, patient wards, operation theaters, and hospital gardens.',
     features: [
       'WHO-Prequalified Safe Chemicals',
@@ -131,7 +126,6 @@ export const SERVICES_DATA = [
     category: 'commercial',
     tag: 'Corporate',
     image: '/assets/commercial.png',
-    price: '₹3,499',
     description: 'Protects staff from daytime biters (Aedes aegypti) to ensure high productivity and employee health safety.',
     features: [
       'Desk & Server Room Safe',
@@ -146,7 +140,6 @@ export const SERVICES_DATA = [
     category: 'commercial',
     tag: 'Hospitality',
     image: '/assets/garden.png',
-    price: '₹2,499',
     description: 'Ensures outdoor al-fresco dining areas and kitchen perimeters remain completely mosquito-free for patrons.',
     features: [
       'Food-Safe Non-Toxic Botanicals',
@@ -155,109 +148,9 @@ export const SERVICES_DATA = [
       'Flexible Late-Night Schedules'
     ]
   },
-  {
-    id: 'warehouse',
-    title: 'Warehouses & Logistics Hubs',
-    category: 'specialized',
-    tag: 'Industrial',
-    image: '/assets/commercial.png',
-    price: 'Custom Quote',
-    description: 'High-volume thermal fogging and larvicide treatments for extensive storage yards, loading bays, and dispatch hubs.',
-    features: [
-      'Heavy-Duty Thermal Fogging',
-      'Stagnant Water Drain Treatment',
-      'Long-Lasting Residual Film',
-      'Safety Compliance Certification'
-    ]
-  },
-  {
-    id: 'industrial',
-    title: 'Industrial Units & Factories',
-    category: 'specialized',
-    tag: 'Industrial',
-    image: '/assets/commercial.png',
-    price: 'Custom Quote',
-    description: 'Large-scale vector eradication designed to safeguard factory workers from vector-borne disease outbreaks.',
-    features: [
-      'Factory Worker Zone Defense',
-      'Drainage Channel Treatment',
-      'Environmental Health Audit',
-      'Monthly Retainer Packages'
-    ]
-  },
-  {
-    id: 'garden',
-    title: 'Landscape & Garden Fogging',
-    category: 'outdoor',
-    tag: 'Eco-Green',
-    image: '/assets/garden.png',
-    price: '₹1,999',
-    description: 'Targeted eco-friendly misting on foliage, bushes, flowerbeds, and shade zones where adult mosquitoes rest during daylight.',
-    features: [
-      'Plant-Safe Natural Actives',
-      'Protects Beneficial Bees & Ladybugs',
-      'Foliage Residual Barrier (30 Days)',
-      'Ideal Before Outdoor Parties'
-    ]
-  },
-  {
-    id: 'fogging',
-    title: 'Outdoor Thermal Heavy Fogging',
-    category: 'outdoor',
-    tag: 'High Capacity',
-    image: '/assets/garden.png',
-    price: '₹2,199',
-    description: 'Rapid dense fogging designed to knock down massive adult mosquito swarms in outdoor open spaces & construction sites.',
-    features: [
-      'Instant Knockdown Technology',
-      'High-Density Fog Penetration',
-      'Covers Up to 20,000 Sq. Ft.',
-      'Ideal for Events & Gatherings'
-    ]
-  },
-  {
-    id: 'mist_system',
-    title: 'Automated Mosquito Mist Systems',
-    category: 'outdoor',
-    tag: 'Smart Tech',
-    image: '/assets/garden.png',
-    price: '₹14,999',
-    description: 'Smart IoT automated perimeter misting nozzles installed around villa garden fences that spray automatically twice daily.',
-    features: [
-      'Mobile App Controlled Timer',
-      'Discreet Precision Nozzles',
-      'Automated Refill Service',
-      'Permanent Outdoor Solution'
-    ]
-  },
-  {
-    id: 'larvae',
-    title: 'Anti-Larval Bio-Control Treatment',
-    category: 'specialized',
-    tag: 'Preventative',
-    image: '/assets/hero.png',
-    price: '₹999',
-    description: 'Biological BTI larvicide application in sumps, overhead tanks, stormwater drains, and stagnant water to kill larvae before hatching.',
-    features: [
-      'Stops Breeding Cycle at Source',
-      'Potable Water Safe (BTI Spores)',
-      'Treats Sumps & Overhead Tanks',
-      'Environmentally Sustainable'
-    ]
-  }
 ];
 
 export const WHY_CHOOSE_US_DATA = [
-  {
-    icon: 'ShieldCheck',
-    title: 'Govt & CGB Licensed Experts',
-    desc: 'Fully registered with Central Insecticides Board & Government health authorities for approved vector management.'
-  },
-  {
-    icon: 'Award',
-    title: '10+ Years Hyderabad Proven Track Record',
-    desc: 'Over a decade of specialized mosquito eradication experience across Hyderabad’s unique micro-climates.'
-  },
   {
     icon: 'Zap',
     title: 'Rapid 2-Hour Express Response',

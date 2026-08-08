@@ -12,7 +12,7 @@ export default function GallerySection({ onSelectImage }) {
     : GALLERY_ITEMS.filter(item => item.category === filter);
 
   return (
-    <section id="gallery" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="gallery" className="py-24 bg-theme-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}

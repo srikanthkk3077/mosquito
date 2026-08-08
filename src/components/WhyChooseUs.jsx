@@ -18,13 +18,13 @@ export default function WhyChooseUs({ onOpenBooking }) {
   return (
     <section id="why-us" className="py-20 bg-mint-grid relative overflow-hidden">
       {/* Background shape */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-sky-100/50 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-14 space-y-3">
-          <span className="px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
+          <span className="px-3.5 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
             Why MosquiShield™ Superior Choice
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -46,10 +46,10 @@ export default function WhyChooseUs({ onOpenBooking }) {
                 className="glass-card p-6 rounded-3xl border border-slate-200/90 bg-white flex flex-col justify-between group shadow-sm hover:shadow-xl cursor-pointer"
               >
                 <div className="space-y-3">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-700 to-emerald-500 text-white flex items-center justify-center shadow-md shadow-emerald-700/20 group-hover:scale-105 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-sky-600 to-blue-500 text-white flex items-center justify-center shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
                     <IconComponent className="w-6 h-6 stroke-[2]" />
                   </div>
-                  <h3 className="font-heading font-bold text-lg text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">
+                  <h3 className="font-heading font-bold text-lg text-slate-900 group-hover:text-sky-600 transition-colors leading-snug">
                     {item.title}
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed font-normal">
@@ -57,7 +57,7 @@ export default function WhyChooseUs({ onOpenBooking }) {
                   </p>
                 </div>
 
-                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-emerald-700 group-hover:translate-x-1 transition-transform">
+                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-sky-600 group-hover:translate-x-1 transition-transform">
                   <span>Learn Security Standard</span>
                   <ArrowRight className="w-3.5 h-3.5 ml-1" />
                 </div>

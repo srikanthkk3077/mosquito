@@ -6,9 +6,9 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
   const navigate = useNavigate();
 
   return (
-    <section className="py-20 bg-slate-900 text-white relative overflow-hidden border-y border-emerald-950">
+    <section className="py-20 bg-slate-900 text-white relative overflow-hidden border-y border-sky-950">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45rem] h-[25rem] bg-emerald-600/10 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45rem] h-[25rem] bg-sky-600/10 blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -16,7 +16,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
 
           {/* Left Certificate Card Frame */}
           <div className="lg:col-span-6 relative">
-            <div className="glass-dark p-8 sm:p-10 rounded-3xl border-2 border-emerald-500/50 shadow-2xl space-y-6 relative overflow-hidden">
+            <div className="glass-dark p-8 sm:p-10 rounded-3xl border-2 border-sky-500/50 shadow-2xl space-y-6 relative overflow-hidden">
 
               {/* Gold Seal Stamp */}
               <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 flex flex-col items-center justify-center p-2 shadow-2xl rotate-12 border-4 border-slate-900">
@@ -27,7 +27,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-500/30">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500 text-white flex items-center justify-center shadow-lg shadow-sky-500/30">
                   <ShieldCheck className="w-7 h-7 stroke-[2.5]" />
                 </div>
                 <div>
@@ -52,8 +52,8 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
                   '100% Money-Back Satisfaction Guarantee',
                   'Verified Digital Warranty Card Delivered via WhatsApp'
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 text-xs font-semibold text-emerald-300">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <div key={i} className="flex items-center gap-3 text-xs font-semibold text-sky-300">
+                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -77,8 +77,8 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
 
           {/* Right Explanation & Policy Details */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
-              <RefreshCw className="w-4 h-4 text-emerald-400" />
+            <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2">
+              <RefreshCw className="w-4 h-4 text-sky-400" />
               <span>Unmatched Service Reliability</span>
             </span>
 
@@ -103,7 +103,7 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
               </div>
 
               <div className="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-2">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-extrabold text-lg">
+                <div className="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-extrabold text-lg">
                   💰 100%
                 </div>
                 <h4 className="font-bold text-white text-sm">Money-Back Promise</h4>
@@ -117,9 +117,9 @@ export default function ServiceWarrantySection({ onOpenBooking }) {
             <div className="pt-4 flex items-center gap-4">
               <a
                 href="tel:+919949187262"
-                className="py-3.5 px-6 rounded-full bg-slate-800 border border-slate-700 hover:border-emerald-500 text-white font-bold text-xs flex items-center gap-2 transition-all"
+                className="py-3.5 px-6 rounded-full bg-slate-800 border border-slate-700 hover:border-sky-500 text-white font-bold text-xs flex items-center gap-2 transition-all"
               >
-                <Phone className="w-4 h-4 text-emerald-400" />
+                <Phone className="w-4 h-4 text-sky-400" />
                 <span>Warranty Claims Helpline: +91 99491 87262</span>
               </a>
             </div>

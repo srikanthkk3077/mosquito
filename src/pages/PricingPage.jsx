@@ -67,9 +67,9 @@ export default function PricingPage() {
     <div className="pt-28 pb-20 space-y-16">
       
       {/* Header Banner */}
-      <section className="bg-gradient-to-b from-emerald-900 via-emerald-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="bg-gradient-to-b from-sky-900 via-blue-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-5xl mx-auto text-center space-y-4 relative z-10">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest">
+          <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest">
             Transparent Pricing
           </span>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
@@ -89,12 +89,12 @@ export default function PricingPage() {
               key={idx}
               className={`hover-lift glass-card rounded-3xl p-6 border flex flex-col justify-between relative ${
                 tier.popular
-                  ? 'border-emerald-500 ring-2 ring-emerald-500/30 bg-white shadow-xl'
+                  ? 'border-sky-500 ring-2 ring-sky-500/30 bg-white shadow-xl'
                   : 'border-slate-200/80 bg-white/90 shadow-sm'
               }`}
             >
               {tier.popular && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-emerald-600 to-emerald-800 text-white text-xs font-extrabold rounded-full uppercase tracking-wider shadow-md">
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-sky-500 to-blue-600 text-white text-xs font-extrabold rounded-full uppercase tracking-wider shadow-md">
                   Most Popular
                 </span>
               )}
@@ -111,7 +111,7 @@ export default function PricingPage() {
                 <ul className="space-y-2.5">
                   {tier.features.map((feat, i) => (
                     <li key={i} className="flex items-center gap-2 text-xs text-slate-700 font-medium">
-                      <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                      <Check className="w-4 h-4 text-sky-600 shrink-0" />
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -124,7 +124,7 @@ export default function PricingPage() {
                   className={`w-full py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 cursor-pointer transition-all ${
                     tier.popular
                       ? 'btn-primary shadow-lg'
-                      : 'border border-slate-200 text-slate-800 hover:border-emerald-600 hover:text-emerald-700 hover:bg-emerald-50'
+                      : 'border border-slate-200 text-slate-800 hover:border-sky-500 hover:text-sky-600 hover:bg-sky-50'
                   }`}
                 >
                   <Calendar className="w-4 h-4" />

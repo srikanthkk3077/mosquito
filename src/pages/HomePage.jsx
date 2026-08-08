@@ -25,19 +25,19 @@ export default function HomePage() {
       {/* 2. Emergency 24x7 Rapid Dispatch Banner */}
 
       {/* 3. Trust Badges (Government Licensed, Safe Chemicals, 90-Day Warranty) */}
-      <TrustBadges />
+      {/* <TrustBadges /> */}
 
       {/* 4. Mosquito Species Threat Radar */}
-      <MosquitoSpeciesRadar />
+      {/* <MosquitoSpeciesRadar /> */}
 
       {/* 5. Interactive Mosquito Risk Estimator Calculator */}
-      <MosquitoRiskCalculator />
+      {/* <MosquitoRiskCalculator /> */}
 
       {/* 6. Why Choose Us */}
       <WhyChooseUs onOpenBooking={() => navigate('/book')} />
 
       {/* 7. Dedicated Service Warranty & Protection Guarantee Section */}
-      <ServiceWarrantySection onOpenBooking={() => navigate('/book')} />
+      {/* <ServiceWarrantySection onOpenBooking={() => navigate('/book')} /> */}
 
       {/* 8. 13 Services Catalog */}
       <ServicesSection onOpenBooking={() => navigate('/book')} />
@@ -52,10 +52,10 @@ export default function HomePage() {
       <BeforeAfterSlider />
 
       {/* 12. Stats Counter Bar */}
-      <StatsCounter />
+      {/* <StatsCounter /> */}
 
       {/* 13. Customer Reviews */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* 14. Areas We Serve */}
       <AreasWeServe onOpenBooking={() => navigate('/book')} />

@@ -36,7 +36,7 @@ export default function HealthBenefits({ onOpenBooking }) {
   ];
 
   return (
-    <section id="benefits" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="benefits" className="py-24 bg-theme-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -54,7 +54,7 @@ export default function HealthBenefits({ onOpenBooking }) {
               {/* Floating Shield Badge */}
               <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl glass-dark text-white border border-white/20">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-sky-500 text-white flex items-center justify-center shrink-0">
                     <Shield className="w-6 h-6" />
                   </div>
                   <div>
@@ -66,14 +66,14 @@ export default function HealthBenefits({ onOpenBooking }) {
             </div>
 
             {/* Background Blob */}
-            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-emerald-300/30 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-sky-300/30 rounded-full blur-3xl pointer-events-none" />
           </div>
 
           {/* Right Side Content & Checklist */}
           <div className="lg:col-span-7 space-y-6">
             
             <div className="space-y-3">
-              <span className="px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-widest">
+              <span className="px-4 py-1.5 rounded-full bg-sky-100 text-sky-900 text-xs font-bold uppercase tracking-widest">
                 Health & Protection First
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -89,9 +89,9 @@ export default function HealthBenefits({ onOpenBooking }) {
               {benefits.map((item, idx) => {
                 const IconComp = item.icon;
                 return (
-                  <div key={idx} className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-emerald-500/50 transition-colors">
+                  <div key={idx} className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-sky-500/50 transition-colors">
                     <div className="flex items-start gap-3">
-                      <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                      <div className="w-9 h-9 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center shrink-0 mt-0.5">
                         <IconComp className="w-5 h-5" />
                       </div>
                       <div>

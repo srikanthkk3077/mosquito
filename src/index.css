@@ -3,12 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2E7D32;
-  --primary-light: #66BB6A;
-  --primary-dark: #1B5E20;
+  /* ==========================================================================
+     GLOBAL THEME COLOR SYSTEM
+     Changing --global-theme-color below in ONE place updates all pages across the site!
+     ========================================================================== */
+  --global-theme-color: #00A2FF;     /* Bright Electric Azure Blue (matching new swatch) */
+  --global-theme-hover: #008AE6;     /* Deep Electric Blue hover state */
+  --global-bg-light: #F0F8FF;        /* Lightest background tone for page container & sections */
+  --global-bg-subtle: #E0F2FE;       /* Secondary section background tint */
+  --global-bg-grid: #F0F8FF;         /* Grid section background */
+
+  /* Ambient Radial Glows & Grid Pattern Lines */
+  --global-radial-1: rgba(0, 162, 255, 0.28);
+  --global-radial-2: rgba(0, 150, 255, 0.18);
+  --global-grid-line: rgba(0, 162, 255, 0.09);
+
+  --primary: #00A2FF;
+  --primary-light: #33B5FF;
+  --primary-dark: #0085D6;
   --accent: #FFC107;
   --accent-hover: #FFB300;
-  --bg: #F8FAFC;
+  --bg: var(--global-bg-light);
   --white: #FFFFFF;
   --dark: #111827;
   --text-gray: #6B7280;
@@ -26,7 +41,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg);
+  background-color: var(--global-bg-light);
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
@@ -36,14 +51,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
-/* Paydiya-style Mint Grid & Ambient Background */
-.bg-mint-grid {
-  background-color: #F2FAF6;
+/* Global Ambient Grid & Page Background Class */
+.bg-mint-grid,
+.bg-global-grid {
+  background-color: var(--global-bg-grid);
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(102, 187, 106, 0.22) 0%, transparent 45%),
-    radial-gradient(circle at 85% 75%, rgba(46, 125, 50, 0.16) 0%, transparent 55%),
-    linear-gradient(to right, rgba(46, 125, 50, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(46, 125, 50, 0.07) 1px, transparent 1px);
+    radial-gradient(circle at 15% 15%, var(--global-radial-1) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, var(--global-radial-2) 0%, transparent 55%),
+    linear-gradient(to right, var(--global-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--global-grid-line) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
 }
 
@@ -51,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-dark-grid {
   background-color: #0D1520;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(46, 125, 50, 0.15) 0%, transparent 65%),
+    radial-gradient(circle at 50% 0%, rgba(0, 162, 255, 0.15) 0%, transparent 65%),
     linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 100% 100%, 32px 32px, 32px 32px;
@@ -87,23 +103,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .hover-lift:hover {
   transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 40px -15px rgba(46, 125, 50, 0.25);
-  border-color: rgba(102, 187, 106, 0.6);
+  box-shadow: 0 20px 40px -15px rgba(0, 162, 255, 0.25);
+  border-color: rgba(0, 162, 255, 0.6);
 }
 
 /* Gradient Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  background: linear-gradient(135deg, #00A2FF 0%, #0077D6 100%);
   color: #FFFFFF;
   font-weight: 600;
   border-radius: 9999px;
-  box-shadow: 0 10px 20px -5px rgba(46, 125, 50, 0.4);
+  box-shadow: 0 10px 20px -5px rgba(0, 162, 255, 0.4);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%);
-  box-shadow: 0 15px 30px -5px rgba(46, 125, 50, 0.5);
+  background: linear-gradient(135deg, #1AB0FF 0%, #00A2FF 100%);
+  box-shadow: 0 15px 30px -5px rgba(0, 162, 255, 0.5);
   transform: translateY(-2px) scale(1.02);
 }
 
@@ -173,6 +189,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: radarRotate 10s linear infinite;
 }
 
+.bg-conic-radar {
+  background: conic-gradient(from 0deg, rgba(0, 162, 255, 0.4) 0deg, rgba(0, 162, 255, 0.05) 60deg, transparent 90deg);
+}
+
 .animate-marquee {
   display: flex;
   width: 200%;
@@ -185,8 +205,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-shimmer {
   background-size: 200% 100%;
-  background-image: linear-gradient(110deg, #2E7D32 0%, #66BB6A 45%, #FFFFFF 50%, #66BB6A 55%, #1B5E20 100%);
+  background-image: linear-gradient(110deg, #00A2FF 0%, #33B5FF 45%, #FFFFFF 50%, #33B5FF 55%, #0077D6 100%);
   animation: shimmer 4s infinite;
+}
+
+/* Animated Mosquito Flight Keyframes */
+@keyframes flyMosquito1 {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  25% { transform: translate(70px, -50px) rotate(20deg); }
+  50% { transform: translate(140px, 30px) rotate(-15deg); }
+  75% { transform: translate(50px, 80px) rotate(25deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes flyMosquito2 {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  30% { transform: translate(-90px, 60px) rotate(-30deg); }
+  60% { transform: translate(-50px, -70px) rotate(15deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes flyMosquito3 {
+  0% { transform: translate(0px, 0px) rotate(0deg) scale(0.9); }
+  40% { transform: translate(100px, 80px) rotate(35deg) scale(1.1); }
+  80% { transform: translate(-40px, 50px) rotate(-20deg) scale(0.95); }
+  100% { transform: translate(0px, 0px) rotate(0deg) scale(0.9); }
+}
+
+@keyframes wingFlutter {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.95; }
+}
+
+.animate-mosquito-1 {
+  animation: flyMosquito1 11s ease-in-out infinite, wingFlutter 0.14s ease-in-out infinite;
+}
+
+.animate-mosquito-2 {
+  animation: flyMosquito2 14s ease-in-out infinite, wingFlutter 0.16s ease-in-out infinite;
+}
+
+.animate-mosquito-3 {
+  animation: flyMosquito3 17s ease-in-out infinite, wingFlutter 0.12s ease-in-out infinite;
 }
 
 /* Fix iOS WebKit date input width overflow & alignment */
@@ -221,12 +281,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #66BB6A;
+  background: #00A2FF;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2E7D32;
+  background: #0085D6;
 }
 
 .before-after-container {

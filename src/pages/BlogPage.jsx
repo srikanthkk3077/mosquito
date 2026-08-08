@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import BlogSection from '../components/BlogSection';
 import LightboxModal from '../components/LightboxModal';
-import TrustBadges from '../components/TrustBadges';
 
 export default function BlogPage() {
   const [selectedPost, setSelectedPost] = useState(null);
 
   return (
     <div className="pt-28 pb-20 space-y-12">
-      <section className="bg-gradient-to-b from-emerald-900 via-emerald-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="max-w-5xl mx-auto text-center space-y-4 relative z-10">
-          <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest">
-            Vector Knowledge Base
+      <section className="bg-gradient-to-b from-sky-900 via-blue-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="max-w-4xl mx-auto text-center relative z-10 space-y-4">
+          <span className="px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-500/30 text-sky-300 text-xs font-bold uppercase tracking-widest">
+            Dengue Prevention Blog
           </span>
           <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
             Dengue & Mosquito Prevention Blog
@@ -22,7 +21,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <TrustBadges />
 
       <BlogSection onSelectBlog={(post) => setSelectedPost(post)} />
 

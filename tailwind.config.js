@@ -7,6 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        theme: {
+          DEFAULT: 'var(--global-theme-color)',
+          light: 'var(--global-bg-light)',
+          subtle: 'var(--global-bg-subtle)',
+          grid: 'var(--global-bg-grid)'
+        },
         primary: {
           DEFAULT: '#2E7D32',
           light: '#66BB6A',
