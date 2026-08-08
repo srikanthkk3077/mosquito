@@ -7,7 +7,7 @@ export default function ServicesSection({ onOpenBooking }) {
   const [activeTab, setActiveTab] = useState('all');
 
   const categories = [
-    { id: 'all', label: 'All Services (13)' },
+    { id: 'all', label: 'All Services (5)' },
     { id: 'residential', label: 'Residential & Villas' },
     { id: 'commercial', label: 'Commercial & Offices' },
     { id: 'outdoor', label: 'Outdoor & Gardens' },

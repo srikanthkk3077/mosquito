@@ -120,34 +120,6 @@ export const SERVICES_DATA = [
       '24/7 Priority Emergency Support'
     ]
   },
-  {
-    id: 'office',
-    title: 'Office Workspaces & Co-Working',
-    category: 'commercial',
-    tag: 'Corporate',
-    image: '/assets/commercial.png',
-    description: 'Protects staff from daytime biters (Aedes aegypti) to ensure high productivity and employee health safety.',
-    features: [
-      'Desk & Server Room Safe',
-      'Bi-Weekly / Monthly Plans',
-      'Air Quality Compliance Report',
-      'Complimentary Sanitization'
-    ]
-  },
-  {
-    id: 'restaurant',
-    title: 'Restaurants, Cafes & Open Dining',
-    category: 'commercial',
-    tag: 'Hospitality',
-    image: '/assets/garden.png',
-    description: 'Ensures outdoor al-fresco dining areas and kitchen perimeters remain completely mosquito-free for patrons.',
-    features: [
-      'Food-Safe Non-Toxic Botanicals',
-      'Outdoor Dining Mist Barrier',
-      'Fly & Gnat Secondary Barrier',
-      'Flexible Late-Night Schedules'
-    ]
-  },
 ];
 
 export const WHY_CHOOSE_US_DATA = [
